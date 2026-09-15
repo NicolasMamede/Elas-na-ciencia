@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cientistas | Elas na Ciência</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html">ELAS NA CIÊNCIA</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="cientistas.html">Cientistas</a>
+            <a href="linha-do-tempo.html">Linha do Tempo</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="brasil.html">Brasil</a>
+            <a href="ciencia-hoje.html">Ciência Hoje</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- TOPO DA PÁGINA -->
+        <section class="pagina-topo">
+
+            <p class="destaque">
+                Mulheres que transformaram diferentes áreas do conhecimento
+            </p>
+
+            <h1>Cientistas</h1>
+
+            <p>
+                Conheça mulheres que contribuíram para a física, química,
+                matemática, computação, medicina, biologia, astronomia,
+                agronomia e diversas outras áreas da ciência.
+            </p>
+
+        </section>
+
+
+        <!-- FERRAMENTAS DE BUSCA -->
+        <section class="ferramentas-cientistas">
+
+            <input
+                type="text"
+                id="busca-cientista"
+                placeholder="Buscar cientista..."
+            >
+
+            <p id="contador-cientistas">
+                12 cientistas encontradas
+            </p>
+
+        </section>
+
+
+        <!-- FILTROS -->
+        <section class="filtros-cientistas">
+
+            <button class="filtro ativo" data-filtro="todas">
+                Todas
+            </button>
+
+            <button class="filtro" data-filtro="fisica">
+                Física
+            </button>
+
+            <button class="filtro" data-filtro="quimica">
+                Química
+            </button>
+
+            <button class="filtro" data-filtro="matematica">
+                Matemática
+            </button>
+
+            <button class="filtro" data-filtro="computacao">
+                Computação
+            </button>
+
+            <button class="filtro" data-filtro="medicina">
+                Medicina
+            </button>
+
+            <button class="filtro" data-filtro="biologia">
+                Biologia
+            </button>
+
+            <button class="filtro" data-filtro="engenharia">
+                Engenharia
+            </button>
+
+            <button class="filtro" data-filtro="outros">
+                Outros
+            </button>
+
+        </section>
+
+
+        <!-- LISTA DE CIENTISTAS -->
+        <section class="lista-cientistas">
+
+            <div class="cards">
+
+
+                <!-- MARIE CURIE -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="fisica quimica"
+                >
+
+                    <img
+                        src="img/marie-curie.jpg"
+                        alt="Marie Curie"
+                    >
+
+                    <h3>Marie Curie</h3>
+
+                    <p class="area">
+                        Física e Química
+                    </p>
+
+                    <p>
+                        Desenvolveu pesquisas fundamentais sobre radioatividade
+                        e participou da descoberta dos elementos polônio e rádio.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- KATHERINE JOHNSON -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="matematica fisica"
+                >
+
+                    <img
+                        src="img/katherine-johnson.jpg"
+                        alt="Katherine Johnson"
+                    >
+
+                    <h3>Katherine Johnson</h3>
+
+                    <p class="area">
+                        Matemática e Física
+                    </p>
+
+                    <p>
+                        Realizou cálculos fundamentais para missões espaciais
+                        da NASA e para o desenvolvimento da exploração espacial.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- ADA LOVELACE -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="matematica computacao"
+                >
+
+                    <img
+                        src="img/ada-lovelace.png"
+                        alt="Ada Lovelace"
+                    >
+
+                    <h3>Ada Lovelace</h3>
+
+                    <p class="area">
+                        Matemática e Computação
+                    </p>
+
+                    <p>
+                        Escreveu um dos primeiros algoritmos destinados
+                        a serem processados por uma máquina.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- ROSALIND FRANKLIN -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="quimica biologia"
+                >
+
+                    <img
+                        src="img/rosalind-franklin.jpg"
+                        alt="Rosalind Franklin"
+                    >
+
+                    <h3>Rosalind Franklin</h3>
+
+                    <p class="area">
+                        Química e Biologia
+                    </p>
+
+                    <p>
+                        Produziu imagens de difração de raios X fundamentais
+                        para a compreensão da estrutura do DNA.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- DOROTHY HODGKIN -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="quimica"
+                >
+
+                    <img
+                        src="img/doroty-hodgkin.jpg"
+                        alt="Dorothy Hodgkin"
+                    >
+
+                    <h3>Dorothy Hodgkin</h3>
+
+                    <p class="area">
+                        Química
+                    </p>
+
+                    <p>
+                        Utilizou cristalografia de raios X para determinar
+                        estruturas de moléculas como penicilina,
+                        vitamina B12 e insulina.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- TU YOUYOU -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="medicina outros"
+                >
+
+                    <img
+                        src="img/tu-youyou.jpg"
+                        alt="Tu Youyou"
+                    >
+
+                    <h3>Tu Youyou</h3>
+
+                    <p class="area">
+                        Farmacologia e Medicina
+                    </p>
+
+                    <p>
+                        Liderou pesquisas que resultaram na descoberta da
+                        artemisinina, medicamento fundamental contra a malária.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- HEDY LAMARR -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="engenharia computacao"
+                >
+
+                    <img
+                        src="img/hedy-lamarr.jpg"
+                        alt="Hedy Lamarr"
+                    >
+
+                    <h3>Hedy Lamarr</h3>
+
+                    <p class="area">
+                        Tecnologia e Engenharia
+                    </p>
+
+                    <p>
+                        Desenvolveu com George Antheil um sistema de salto
+                        de frequência importante para a evolução das
+                        comunicações sem fio.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- MARY ANNING -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="outros"
+                >
+
+                    <img
+                        src="img/mary-anning.jpg"
+                        alt="Mary Anning"
+                    >
+
+                    <h3>Mary Anning</h3>
+
+                    <p class="area">
+                        Paleontologia
+                    </p>
+
+                    <p>
+                        Descobriu fósseis importantes de animais marinhos
+                        pré-históricos e contribuiu para o desenvolvimento
+                        da paleontologia.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- CHIEN-SHIUNG WU -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="fisica"
+                >
+
+                    <img
+                        src="img/chien-shiung -wu.jpg"
+                        alt="Chien-Shiung Wu"
+                    >
+
+                    <h3>Chien-Shiung Wu</h3>
+
+                    <p class="area">
+                        Física
+                    </p>
+
+                    <p>
+                        Realizou experimentos decisivos em física nuclear,
+                        incluindo pesquisas fundamentais sobre a conservação
+                        da paridade.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- FRANCES ARNOLD -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="quimica engenharia"
+                >
+
+                    <img
+                        src="img/frances-arnold.jpg"
+                        alt="Frances Arnold"
+                    >
+
+                    <h3>Frances Arnold</h3>
+
+                    <p class="area">
+                        Química e Engenharia
+                    </p>
+
+                    <p>
+                        Desenvolveu a evolução dirigida de enzimas,
+                        técnica aplicada em medicamentos, combustíveis
+                        e processos industriais.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- NISE DA SILVEIRA -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="medicina"
+                >
+
+                    <img
+                        src="img/nise-da-silveira.png"
+                        alt="Nise da Silveira"
+                    >
+
+                    <h3>Nise da Silveira</h3>
+
+                    <p class="area">
+                        Medicina e Psiquiatria
+                    </p>
+
+                    <p>
+                        Defendeu tratamentos psiquiátricos mais humanizados
+                        e valorizou atividades artísticas como parte da terapia.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+
+                <!-- JOHANNA DÖBEREINER -->
+                <article
+                    class="card cientista-card"
+                    data-categorias="biologia outros"
+                >
+
+                    <img
+                        src="img/johanna-dobereiner.jpg"
+                        alt="Johanna Döbereiner"
+                    >
+
+                    <h3>Johanna Döbereiner</h3>
+
+                    <p class="area">
+                        Agronomia e Biologia
+                    </p>
+
+                    <p>
+                        Pesquisou bactérias fixadoras de nitrogênio
+                        e contribuiu para reduzir o uso de fertilizantes
+                        na agricultura brasileira.
+                    </p>
+
+                    <a href="perfil.html">
+                        Conhecer trajetória →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h2>Elas na Ciência</h2>
+
+        <p>
+            Conhecimento, representatividade e inspiração.
+        </p>
+
+        <p>
+            Projeto desenvolvido para a MTEC.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,4 +1,7 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +20,9 @@ body {
 }
 
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+========================= */
 
 header {
     width: 100%;
@@ -30,7 +35,6 @@ header {
     padding: 0 7%;
 
     background-color: rgba(255, 255, 255, 0.96);
-
     border-bottom: 1px solid #dceaf5;
 
     position: sticky;
@@ -40,7 +44,6 @@ header {
 
 .logo a {
     text-decoration: none;
-
     color: #0c4f7d;
 
     font-size: 24px;
@@ -56,7 +59,6 @@ nav {
 
 nav a {
     text-decoration: none;
-
     color: #244a66;
 
     font-size: 15px;
@@ -92,7 +94,9 @@ nav a:hover::after {
 }
 
 
-/* CAPA */
+/* =========================
+   CAPA DA INDEX
+========================= */
 
 .inicio {
     min-height: 90vh;
@@ -126,7 +130,6 @@ nav a:hover::after {
     display: inline-block;
 
     color: #0b78b8;
-
     background-color: #e5f4fc;
 
     padding: 8px 14px;
@@ -143,7 +146,6 @@ nav a:hover::after {
     color: #0a3d62;
 
     font-size: 68px;
-
     line-height: 1;
 
     margin-bottom: 18px;
@@ -168,7 +170,9 @@ nav a:hover::after {
 }
 
 
-/* BOTÕES */
+/* =========================
+   BOTÕES
+========================= */
 
 .botao {
     display: inline-block;
@@ -198,7 +202,9 @@ nav a:hover::after {
 }
 
 
-/* SEÇÕES GERAIS */
+/* =========================
+   SEÇÕES GERAIS
+========================= */
 
 main section:not(.inicio) {
     padding: 80px 8%;
@@ -223,11 +229,12 @@ main section > p {
 }
 
 
-/* SOBRE */
+/* =========================
+   SOBRE O PROJETO
+========================= */
 
 .sobre {
     text-align: center;
-
     background-color: white;
 }
 
@@ -241,11 +248,9 @@ main section > p {
 }
 
 
-/* DESTAQUES */
-
-.destaques {
-    background-color: #f4faff;
-}
+/* =========================
+   CARDS
+========================= */
 
 .cards {
     display: grid;
@@ -274,13 +279,18 @@ main section > p {
 
     min-height: 490px;
 
-    transition: 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
 
-    box-shadow: 0 14px 30px rgba(45, 94, 125, 0.17);
+    border-color: #b8d8e9;
+
+    box-shadow: 0 18px 35px rgba(45, 94, 125, 0.17);
 }
 
 .card img {
@@ -291,6 +301,12 @@ main section > p {
     object-position: center top;
 
     display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.03);
 }
 
 .card h3 {
@@ -323,14 +339,29 @@ main section > p {
     text-decoration: none;
 
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
 .card a:hover {
-    text-decoration: underline;
+    color: #075e92;
+
+    transform: translateX(4px);
 }
 
 
-/* CIÊNCIA NO COTIDIANO */
+/* =========================
+   DESTAQUES DA INDEX
+========================= */
+
+.destaques {
+    background-color: #f4faff;
+}
+
+
+/* =========================
+   INVENÇÕES DO COTIDIANO
+========================= */
 
 .cotidiano {
     background-color: white;
@@ -341,7 +372,9 @@ main section > p {
 }
 
 
-/* LINHA DO TEMPO */
+/* =========================
+   LINHA DO TEMPO DA INDEX
+========================= */
 
 .linha-resumo {
     background-color: #eef8fd;
@@ -377,6 +410,8 @@ main section > p {
     transform: translateY(-6px);
 
     border-color: #5bb3de;
+
+    box-shadow: 0 12px 28px rgba(65, 103, 128, 0.14);
 }
 
 .evento span {
@@ -405,7 +440,9 @@ main section > p {
 }
 
 
-/* QUIZ */
+/* =========================
+   QUIZ DA INDEX
+========================= */
 
 .quiz-chamada {
     text-align: center;
@@ -435,7 +472,6 @@ main section > p {
 
 .quiz-chamada .botao {
     background-color: white;
-
     color: #0b6fa8;
 }
 
@@ -444,7 +480,207 @@ main section > p {
 }
 
 
-/* RODAPÉ */
+/* =========================
+   TOPO DAS PÁGINAS INTERNAS
+========================= */
+
+.pagina-topo {
+    text-align: center;
+
+    background-color: white;
+
+    padding: 70px 8% 40px;
+}
+
+.pagina-topo .destaque {
+    margin-bottom: 15px;
+}
+
+.pagina-topo h1 {
+    color: #0a3d62;
+
+    font-size: 48px;
+
+    margin-bottom: 18px;
+}
+
+.pagina-topo > p {
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #5a7285;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   FERRAMENTAS DA PÁGINA CIENTISTAS
+========================= */
+
+.ferramentas-cientistas {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #f4faff;
+
+    padding: 25px 8% 10px;
+}
+
+#busca-cientista {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 14px 18px;
+
+    border: 1px solid #c7dfea;
+
+    border-radius: 12px;
+
+    background-color: white;
+
+    color: #18324a;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+#busca-cientista::placeholder {
+    color: #8ba1b1;
+}
+
+#busca-cientista:focus {
+    border-color: #0b78b8;
+
+    box-shadow: 0 0 0 4px rgba(11, 120, 184, 0.10);
+}
+
+#contador-cientistas {
+    color: #5a7285;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   FILTROS DE CIENTISTAS
+========================= */
+
+.filtros-cientistas {
+    background-color: #f4faff;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    padding: 25px 8% 10px;
+}
+
+.filtro {
+    border: 1px solid #b9d9ea;
+
+    background-color: white;
+
+    color: #0a4f78;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.filtro:hover {
+    background-color: #e5f4fc;
+
+    border-color: #0b78b8;
+
+    transform: translateY(-2px);
+}
+
+.filtro.ativo {
+    background-color: #0b78b8;
+
+    color: white;
+
+    border-color: #0b78b8;
+
+    box-shadow: 0 6px 15px rgba(11, 120, 184, 0.20);
+}
+
+
+/* =========================
+   LISTA DE CIENTISTAS
+========================= */
+
+.lista-cientistas {
+    background-color: #f4faff;
+
+    padding: 45px 8% 90px;
+}
+
+.lista-cientistas .cards {
+    margin-top: 0;
+}
+
+
+/* =========================
+   FILTRO / ESCONDER CARDS
+========================= */
+
+.cientista-card {
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cientista-card {
+    opacity: 1;
+    transform: scale(1);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.cientista-card.saindo {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+}
+
+.cientista-card.escondido {
+    display: none;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
 
 footer {
     background-color: #082f49;
@@ -469,7 +705,9 @@ footer p {
 }
 
 
-/* RESPONSIVIDADE */
+/* =========================
+   RESPONSIVIDADE - TABLET
+========================= */
 
 @media (max-width: 1100px) {
 
@@ -488,8 +726,13 @@ footer p {
     nav {
         gap: 16px;
     }
+
 }
 
+
+/* =========================
+   RESPONSIVIDADE - CELULAR
+========================= */
 
 @media (max-width: 750px) {
 
@@ -564,7 +807,42 @@ footer p {
         font-size: 29px;
     }
 
+    .pagina-topo {
+        padding: 55px 6% 30px;
+    }
+
+    .pagina-topo h1 {
+        font-size: 38px;
+    }
+
+    .ferramentas-cientistas {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 20px 6% 10px;
+    }
+
+    #busca-cientista {
+        max-width: none;
+    }
+
+    #contador-cientistas {
+        text-align: center;
+    }
+
+    .filtros-cientistas {
+        padding: 20px 6% 10px;
+    }
+
+    .filtro {
+        padding: 9px 14px;
+
+        font-size: 13px;
+    }
+
     .quiz-chamada h2 {
         font-size: 31px;
     }
+
 }
