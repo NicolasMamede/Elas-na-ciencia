@@ -1234,3 +1234,95 @@ footer p {
     }
 }
 
+
+
+/* =========================
+   NAVEGAÇÃO POR ÁREAS
+   SEM JAVASCRIPT
+========================= */
+
+.areas-cientificas {
+    background-color: #f4faff;
+    padding: 18px 8% 36px;
+}
+
+.areas-links {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.botao-area {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 19px;
+    border: 1px solid #bcdbea;
+    border-radius: 999px;
+    background-color: white;
+    color: #0a537c;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.botao-area:hover,
+.botao-area.ativo {
+    background-color: #0b78b8;
+    border-color: #0b78b8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.voltar-area {
+    background-color: #f4faff;
+    padding: 22px 8% 0;
+}
+
+.botao-voltar {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid #bcdbea;
+    border-radius: 10px;
+    background-color: white;
+    color: #0b6fa8;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #eaf7ff;
+    transform: translateX(-3px);
+}
+
+.area-lista {
+    padding-top: 32px;
+    min-height: 55vh;
+}
+
+@media (max-width: 750px) {
+    .areas-cientificas {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .areas-links {
+        justify-content: flex-start;
+    }
+
+    .botao-area {
+        flex: 1 1 130px;
+    }
+
+    .voltar-area {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
