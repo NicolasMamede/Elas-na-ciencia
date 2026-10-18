@@ -1411,3 +1411,449 @@ footer p {
     }
 }
 
+
+
+/* =========================
+   BOTÃO "CONHECER TRAJETÓRIA"
+   CTA ILUSTRATIVO DOS CARDS
+========================= */
+
+.card .trajetoria-link {
+    position: relative;
+    isolation: isolate;
+
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) 36px;
+    align-items: center;
+    gap: 11px;
+
+    width: calc(100% - 36px);
+    min-height: 64px;
+
+    margin: auto 18px 20px;
+    padding: 10px 11px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    background:
+        linear-gradient(135deg, #0a4f7a 0%, #0b78b8 58%, #1796d2 100%);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 14px;
+
+    box-shadow:
+        0 9px 20px rgba(11, 120, 184, 0.20),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.card .trajetoria-link::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width: 90px;
+    height: 90px;
+    right: -45px;
+    top: -48px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+
+    transition: transform 0.35s ease;
+}
+
+.card .trajetoria-link:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 28px rgba(11, 120, 184, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.card .trajetoria-link:hover::after {
+    transform: scale(1.25);
+}
+
+.trajetoria-simbolo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: #0a527f;
+    background: #ffffff;
+
+    font-size: 20px;
+    line-height: 1;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.10);
+}
+
+.trajetoria-texto {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.trajetoria-texto small {
+    color: rgba(255, 255, 255, 0.76);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.trajetoria-texto strong {
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.trajetoria-seta {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    justify-self: end;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.card .trajetoria-link:hover .trajetoria-seta {
+    transform: translateX(3px);
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.card .trajetoria-link:focus-visible {
+    outline: 3px solid #8fd8ff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 750px) {
+    .card .trajetoria-link {
+        grid-template-columns: 40px minmax(0, 1fr) 34px;
+        min-height: 60px;
+    }
+}
+
+
+/* =========================
+   PERFIS INDIVIDUAIS
+   100% HTML + CSS
+========================= */
+.perfil-pagina { background: #f7fbff; }
+
+.perfil-hero {
+    min-height: 620px;
+    padding: 70px 8% 76px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+    align-items: center;
+    gap: 64px;
+    background:
+        radial-gradient(circle at 82% 30%, rgba(79, 177, 229, .18), transparent 30%),
+        linear-gradient(135deg, #f8fcff 0%, #eaf6fd 100%);
+    border-bottom: 1px solid #d8e8f3;
+    overflow: hidden;
+}
+
+.perfil-hero-conteudo { max-width: 720px; }
+.perfil-voltar {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 34px;
+    color: #0b6fa9;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .2s ease, color .2s ease;
+}
+.perfil-voltar:hover { transform: translateX(-4px); color: #06476d; }
+.perfil-etiqueta {
+    margin-bottom: 10px;
+    color: #0b78b8;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2.1px;
+}
+.perfil-hero h1 {
+    margin: 0;
+    color: #073f62;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: .98;
+    letter-spacing: -2.5px;
+}
+.perfil-area {
+    margin-top: 18px;
+    color: #0b78b8;
+    font-size: 17px;
+    font-weight: 800;
+}
+.perfil-frase {
+    max-width: 660px;
+    margin-top: 24px;
+    color: #36566d;
+    font-size: 20px;
+    line-height: 1.65;
+}
+.perfil-dados {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.perfil-dados > div {
+    min-width: 180px;
+    padding: 13px 17px;
+    background: rgba(255,255,255,.74);
+    border: 1px solid #cfe3f0;
+    border-radius: 12px;
+}
+.perfil-dados span {
+    display: block;
+    margin-bottom: 2px;
+    color: #7892a5;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.perfil-dados strong { color: #173f59; font-size: 14px; }
+
+.perfil-foto-wrap {
+    position: relative;
+    max-width: 430px;
+    justify-self: center;
+}
+.perfil-foto-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 22px -22px -22px 22px;
+    border: 2px solid #7ec7ed;
+    border-radius: 26px;
+}
+.perfil-foto {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 26px;
+    box-shadow: 0 24px 52px rgba(6, 67, 102, .18);
+}
+
+.perfil-resumo,
+.perfil-trajetoria,
+.perfil-importancia {
+    padding: 78px 8%;
+}
+.perfil-resumo { background: #fff; }
+.perfil-trajetoria { background: #eef7fc; }
+.perfil-importancia { background: #fff; }
+
+.perfil-titulo-secao {
+    max-width: 1100px;
+    margin: 0 auto 38px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+.perfil-titulo-secao > span {
+    color: #99b4c6;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-top: 8px;
+}
+.perfil-titulo-secao p {
+    margin: 0 0 3px;
+    color: #0b78b8;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+}
+.perfil-titulo-secao h2 {
+    margin: 0;
+    color: #0a3d62;
+    font-size: clamp(28px, 4vw, 42px);
+}
+.perfil-texto-principal {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 38px;
+    color: #36566d;
+    font-size: 20px;
+    line-height: 1.8;
+    border-left: 4px solid #0b78b8;
+}
+
+.perfil-linha {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+.perfil-linha::before {
+    content: "";
+    position: absolute;
+    left: 112px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: linear-gradient(#0b78b8, #8fd4f5);
+    border-radius: 6px;
+}
+.perfil-evento {
+    position: relative;
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 52px;
+    align-items: center;
+    margin: 0 0 18px;
+}
+.perfil-evento:last-child { margin-bottom: 0; }
+.perfil-evento::before {
+    content: "";
+    position: absolute;
+    left: 103px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #fff;
+    border: 5px solid #0b78b8;
+    box-shadow: 0 0 0 5px rgba(11,120,184,.10);
+}
+.perfil-ano {
+    text-align: right;
+    color: #0a527f;
+    font-size: 18px;
+    font-weight: 900;
+}
+.perfil-evento-conteudo {
+    margin-left: 8px;
+    padding: 18px 22px;
+    background: #fff;
+    border: 1px solid #d6e8f2;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(12, 75, 109, .06);
+}
+.perfil-evento-conteudo p {
+    margin: 0;
+    color: #3d5d72;
+    line-height: 1.65;
+}
+
+.perfil-impacto-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+.perfil-impacto {
+    padding: 28px;
+    border: 1px solid #d5e6f0;
+    border-radius: 18px;
+    background: #f8fcff;
+}
+.perfil-impacto-destaque {
+    background: linear-gradient(135deg, #0a527f, #0b78b8);
+    border-color: transparent;
+}
+.perfil-impacto-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    background: #dff3ff;
+    color: #0a527f;
+    font-weight: 900;
+}
+.perfil-impacto h3 { margin: 0 0 9px; color: #0a3d62; font-size: 20px; }
+.perfil-impacto p { margin: 0; color: #45657a; line-height: 1.7; }
+.perfil-impacto-destaque .perfil-impacto-icone { background: rgba(255,255,255,.16); color: #fff; }
+.perfil-impacto-destaque h3,
+.perfil-impacto-destaque p { color: #fff; }
+.perfil-fonte {
+    max-width: 1000px;
+    margin: 22px auto 0;
+    color: #7890a0;
+    font-size: 12px;
+}
+.perfil-acoes {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.perfil-link-timeline {
+    display: inline-flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 12px 20px;
+    color: #0b6fa9;
+    font-weight: 800;
+    text-decoration: none;
+    border: 2px solid #b7d9eb;
+    border-radius: 12px;
+    background: #fff;
+    transition: transform .2s ease, border-color .2s ease;
+}
+.perfil-link-timeline:hover { transform: translateX(4px); border-color: #0b78b8; }
+
+@media (max-width: 900px) {
+    .perfil-hero { grid-template-columns: 1fr; gap: 42px; padding-top: 52px; }
+    .perfil-foto-wrap { width: min(100%, 390px); justify-self: start; }
+    .perfil-impacto-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 650px) {
+    .perfil-hero, .perfil-resumo, .perfil-trajetoria, .perfil-importancia { padding-left: 5%; padding-right: 5%; }
+    .perfil-hero h1 { letter-spacing: -1.3px; }
+    .perfil-frase, .perfil-texto-principal { font-size: 17px; }
+    .perfil-texto-principal { padding-left: 20px; }
+    .perfil-linha::before { left: 12px; }
+    .perfil-evento { grid-template-columns: 1fr; gap: 8px; padding-left: 38px; }
+    .perfil-evento::before { left: 3px; top: 18px; }
+    .perfil-ano { text-align: left; font-size: 16px; }
+    .perfil-evento-conteudo { margin-left: 0; }
+    .perfil-foto-wrap::before { inset: 14px -12px -14px 12px; }
+}
