@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz da Rotina | Elas na Ciência</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+<header>
+    <div class="logo"><a href="index.html">ELAS NA CIÊNCIA</a></div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="cientistas.html">Cientistas</a>
+        <a href="linha-do-tempo.html">Linha do Tempo</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="brasil.html">Brasil</a>
+        <a href="ciencia-hoje.html">Ciência Hoje</a>
+    </nav>
+</header>
+
+<main class="quiz-page">
+    <section class="quiz-hero" id="inicio-quiz">
+        <div class="quiz-hero-inner">
+            <p class="quiz-kicker">UM DIA. OITO DESCOBERTAS.</p>
+            <h1>Quanto da ciência feita por mulheres passa pela sua rotina?</h1>
+            <p class="quiz-intro">Você não precisa decorar nomes. Em cada momento do dia, uma cientista ou inventora aparece como pista — e você descobre qual contribuição dela está presente naquela situação.</p>
+            <a class="quiz-start" href="#q1">Começar o dia <span>↓</span></a>
+        </div>
+        <div class="quiz-clock" aria-hidden="true">
+            <span>07</span><i>:</i><span>00</span>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-cafe" id="q1">
+        <div class="scene-time">07:00 <span>CAFÉ DA MANHÃ</span></div>
+        <div class="scene-layout">
+            <div class="scene-story">
+                <span class="scene-number">01</span>
+                <h2>O primeiro ritual do dia</h2>
+                <p>Em 1908, <strong>Melitta Bentz</strong> procurava uma maneira de preparar café sem deixar tantos resíduos na bebida.</p>
+                <div class="scene-visual cafe-visual" aria-hidden="true"><div class="coffee-cup"></div><div class="coffee-steam s1"></div><div class="coffee-steam s2"></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual solução ficou associada à invenção de Melitta Bentz?</legend>
+                <p class="question-help">Escolha uma alternativa para revelar a explicação.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q1" id="q1a"><label for="q1a">A cafeteira elétrica doméstica</label><div class="option-feedback">A cafeteira elétrica surgiu por outros caminhos. A inovação de Melitta estava no modo de separar o pó da bebida.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q1" id="q1b"><label for="q1b">O filtro de café de papel</label><div class="option-feedback"><strong>Isso!</strong> Melitta Bentz criou um método simples de filtragem usando papel, base do sistema que leva seu nome até hoje.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q1" id="q1c"><label for="q1c">A garrafa térmica</label><div class="option-feedback">A garrafa térmica resolve outro problema: conservar a temperatura. Melitta buscava melhorar a filtragem do café.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q1" id="q1d"><label for="q1d">O café solúvel</label><div class="option-feedback">O café solúvel não foi a contribuição de Melitta Bentz. Pense no objeto por onde a água passa antes de chegar à xícara.</div></div>
+                <a class="next-scene" href="#q2">Sair de casa →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-car" id="q2">
+        <div class="scene-time">07:40 <span>NO CAMINHO</span></div>
+        <div class="scene-layout reverse">
+            <div class="scene-story">
+                <span class="scene-number">02</span>
+                <h2>Começou a chover</h2>
+                <p>Em 1903, <strong>Mary Anderson</strong> patenteou uma solução para melhorar a visibilidade de quem dirigia em condições ruins.</p>
+                <div class="scene-visual rain-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><div class="wiper"></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual invenção ajudou diretamente nessa situação?</legend>
+                <p class="question-help">Nem toda tecnologia do carro nasceu dentro de uma montadora.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q2" id="q2a"><label for="q2a">O desembaçador do vidro traseiro</label><div class="option-feedback">O desembaçador resolve condensação. A patente de Mary Anderson era um mecanismo que agia fisicamente sobre o vidro dianteiro.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q2" id="q2b"><label for="q2b">O farol de neblina</label><div class="option-feedback">Faróis ajudam a iluminar a via, mas não retiram água ou neve acumulada no vidro.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q2" id="q2c"><label for="q2c">O limpador de para-brisa</label><div class="option-feedback"><strong>Exatamente.</strong> Mary Anderson patenteou um dispositivo operado de dentro do veículo para limpar o para-brisa.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q2" id="q2d"><label for="q2d">O vidro laminado de segurança</label><div class="option-feedback">O vidro laminado tem outra função. A pista principal é a chuva sendo retirada da superfície do para-brisa.</div></div>
+                <a class="next-scene" href="#q3">Encontrar o caminho →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-gps" id="q3">
+        <div class="scene-time">07:47 <span>LOCALIZAÇÃO</span></div>
+        <div class="scene-layout">
+            <div class="scene-story">
+                <span class="scene-number">03</span>
+                <h2>Você não sabe exatamente para onde ir</h2>
+                <p>A matemática <strong>Gladys West</strong> trabalhou com modelos extremamente precisos da forma da Terra, fundamentais para sistemas modernos de posicionamento.</p>
+                <div class="scene-visual gps-visual" aria-hidden="true"><div class="route"></div><div class="pin">●</div><div class="grid-lines"></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual tecnologia da sua rotina depende diretamente desse tipo de cálculo?</legend>
+                <p class="question-help">Pense em posição geográfica, não em conexão entre aparelhos.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q3" id="q3a"><label for="q3a">Bluetooth</label><div class="option-feedback">Bluetooth conecta dispositivos próximos, mas não determina sua posição na superfície terrestre.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q3" id="q3b"><label for="q3b">GPS</label><div class="option-feedback"><strong>Isso!</strong> Os modelos geodésicos desenvolvidos por Gladys West contribuíram para a precisão necessária ao GPS.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q3" id="q3c"><label for="q3c">NFC</label><div class="option-feedback">NFC permite comunicação a curtíssima distância, como em pagamentos por aproximação. Não é um sistema de posicionamento global.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q3" id="q3d"><label for="q3d">Wi-Fi</label><div class="option-feedback">Wi-Fi conecta equipamentos a uma rede local; os cálculos de Gladys West estão ligados à localização por satélites.</div></div>
+                <a class="next-scene" href="#q4">Chegar e se comunicar →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-call" id="q4">
+        <div class="scene-time">09:10 <span>COMUNICAÇÃO</span></div>
+        <div class="scene-layout reverse">
+            <div class="scene-story">
+                <span class="scene-number">04</span>
+                <h2>Uma chamada pela internet</h2>
+                <p>A engenheira <strong>Marian Croak</strong> participou de avanços fundamentais na transmissão de voz por redes digitais.</p>
+                <div class="scene-visual call-visual" aria-hidden="true"><div class="wave w1"></div><div class="wave w2"></div><div class="phone-dot"></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual tecnologia está diretamente ligada ao trabalho de Marian Croak?</legend>
+                <p class="question-help">A resposta descreve voz viajando como dados pela rede.</p>
+                <div class="quiz-option correct-option"><input type="radio" name="q4" id="q4a"><label for="q4a">VoIP</label><div class="option-feedback"><strong>Perfeito.</strong> VoIP significa transmissão de voz usando redes baseadas em protocolo de internet.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q4" id="q4b"><label for="q4b">SMS</label><div class="option-feedback">SMS foi criado para mensagens curtas de texto em redes móveis, não para transportar voz pela internet.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q4" id="q4c"><label for="q4c">Rádio FM</label><div class="option-feedback">Rádio FM transmite áudio por ondas de rádio em frequências específicas, sem depender do protocolo de internet.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q4" id="q4d"><label for="q4d">Código de barras</label><div class="option-feedback">Código de barras identifica produtos por padrões visuais; não está relacionado à transmissão de voz.</div></div>
+                <a class="next-scene" href="#q5">Hora do almoço →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-paper" id="q5">
+        <div class="scene-time">12:35 <span>UMA COMPRA RÁPIDA</span></div>
+        <div class="scene-layout">
+            <div class="scene-story">
+                <span class="scene-number">05</span>
+                <h2>Até uma sacola tem engenharia</h2>
+                <p><strong>Margaret E. Knight</strong> projetou uma máquina que automatizava o corte, a dobra e a colagem de um objeto extremamente comum.</p>
+                <div class="scene-visual bag-visual" aria-hidden="true"><div class="paper-bag"><i></i><i></i></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual produto essa máquina ajudava a fabricar?</legend>
+                <p class="question-help">A inovação estava principalmente no formato da base.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q5" id="q5a"><label for="q5a">Caixas de papelão ondulado</label><div class="option-feedback">Knight trabalhou com papel, mas sua máquina famosa não produzia caixas.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q5" id="q5b"><label for="q5b">Envelopes postais</label><div class="option-feedback">Envelopes usam dobras e cola, porém não são o produto de fundo plano ligado à patente de Knight.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q5" id="q5c"><label for="q5c">Sacolas de papel com fundo plano</label><div class="option-feedback"><strong>Isso mesmo.</strong> A máquina de Margaret Knight permitia fabricar sacolas de papel com base plana de forma automatizada.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q5" id="q5d"><label for="q5d">Copos descartáveis de papel</label><div class="option-feedback">Copos exigem outro processo de conformação. Knight ficou conhecida pela máquina de produzir sacolas de fundo plano.</div></div>
+                <a class="next-scene" href="#q6">Voltar para casa →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-security" id="q6">
+        <div class="scene-time">18:20 <span>CHEGANDO EM CASA</span></div>
+        <div class="scene-layout reverse">
+            <div class="scene-story">
+                <span class="scene-number">06</span>
+                <h2>Quem está do outro lado da porta?</h2>
+                <p>Na década de 1960, <strong>Marie Van Brittan Brown</strong> idealizou com Albert Brown um sistema com câmera, monitor, áudio, alarme e controle da porta.</p>
+                <div class="scene-visual security-visual" aria-hidden="true"><div class="camera-eye"></div><div class="scan-line"></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Esse projeto é considerado precursor de qual tecnologia atual?</legend>
+                <p class="question-help">Observe o conjunto: ver, falar, alertar e controlar o acesso.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q6" id="q6a"><label for="q6a">Automação de iluminação residencial</label><div class="option-feedback">Iluminação automatizada controla lâmpadas; o sistema de Brown tinha foco em observar visitantes e proteger a entrada.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q6" id="q6b"><label for="q6b">Sistemas de segurança residencial</label><div class="option-feedback"><strong>Exatamente.</strong> A patente reunia recursos que hoje reconhecemos em câmeras, interfones e sistemas inteligentes de segurança.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q6" id="q6c"><label for="q6c">Ar-condicionado inteligente</label><div class="option-feedback">Controle de temperatura não fazia parte do problema que Brown pretendia resolver.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q6" id="q6d"><label for="q6d">Sensores de fumaça</label><div class="option-feedback">Alarmes contra incêndio têm outra finalidade. O sistema de Brown monitorava e controlava o acesso à residência.</div></div>
+                <a class="next-scene" href="#q7">Olhar através de uma lente →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-glass" id="q7">
+        <div class="scene-time">19:05 <span>LUZ E REFLEXO</span></div>
+        <div class="scene-layout">
+            <div class="scene-story">
+                <span class="scene-number">07</span>
+                <h2>Quando o vidro quase desaparece</h2>
+                <p>A física e química <strong>Katharine Burr Blodgett</strong> desenvolveu técnicas para criar películas extremamente finas sobre superfícies.</p>
+                <div class="scene-visual glass-visual" aria-hidden="true"><div class="lens"></div><div class="light-ray r1"></div><div class="light-ray r2"></div></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual aplicação cotidiana se relaciona diretamente a esse trabalho?</legend>
+                <p class="question-help">Pense no que acontece quando você quer enxergar através de uma superfície sem ser atrapalhado pela luz refletida.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q7" id="q7a"><label for="q7a">Vidros que mudam de cor com a temperatura</label><div class="option-feedback">Esse efeito depende de materiais termocrômicos. Blodgett ficou conhecida por películas finas que reduziam reflexos.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q7" id="q7b"><label for="q7b">Películas de privacidade espelhadas</label><div class="option-feedback">Películas espelhadas aumentam ou controlam a reflexão. O trabalho de Blodgett buscava justamente reduzi-la.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q7" id="q7c"><label for="q7c">Revestimentos antirreflexo em lentes e vidros</label><div class="option-feedback"><strong>Isso!</strong> As películas de Blodgett ajudaram a desenvolver superfícies de baixíssima reflexão usadas em óptica.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q7" id="q7d"><label for="q7d">Vidros elétricos de aquecimento rápido</label><div class="option-feedback">Aquecimento elétrico exige elementos condutores. A contribuição de Blodgett estava na óptica de películas finas.</div></div>
+                <a class="next-scene" href="#q8">Último desafio →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-scene scene-kevlar" id="q8">
+        <div class="scene-time">20:15 <span>MATERIAIS AO NOSSO REDOR</span></div>
+        <div class="scene-layout reverse">
+            <div class="scene-story">
+                <span class="scene-number">08</span>
+                <h2>Um material muito além do laboratório</h2>
+                <p>Enquanto pesquisava polímeros, <strong>Stephanie Kwolek</strong> encontrou uma combinação que levaria a uma fibra leve e extremamente resistente.</p>
+                <div class="scene-visual fiber-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <fieldset class="question-card">
+                <legend>Qual é o nome do material associado a essa descoberta?</legend>
+                <p class="question-help">Ele ficou famoso pela proteção, mas também aparece em cabos, pneus e outras aplicações.</p>
+                <div class="quiz-option wrong-option"><input type="radio" name="q8" id="q8a"><label for="q8a">Teflon</label><div class="option-feedback">Teflon é um fluoropolímero conhecido por baixo atrito. Não foi o material desenvolvido por Kwolek.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q8" id="q8b"><label for="q8b">Nylon</label><div class="option-feedback">Nylon é uma família de poliamidas importante, mas antecede o trabalho de Kwolek e possui propriedades diferentes.</div></div>
+                <div class="quiz-option wrong-option"><input type="radio" name="q8" id="q8c"><label for="q8c">Fibra de carbono</label><div class="option-feedback">Fibra de carbono é outro material de alto desempenho. A descoberta de Kwolek pertence à família das aramidas.</div></div>
+                <div class="quiz-option correct-option"><input type="radio" name="q8" id="q8d"><label for="q8d">Kevlar</label><div class="option-feedback"><strong>Correto.</strong> O Kevlar é uma fibra de aramida conhecida pela alta resistência em relação ao peso.</div></div>
+                <a class="next-scene final-link" href="#fim-quiz">Encerrar o dia →</a>
+            </fieldset>
+        </div>
+    </section>
+
+    <section class="quiz-finale" id="fim-quiz">
+        <p class="final-time">FIM DO DIA</p>
+        <h2>Você não passou o dia estudando invenções.</h2>
+        <h3>Você passou o dia <strong>usando</strong> ideias que carregam contribuições de mulheres.</h3>
+        <div class="final-strip" aria-label="Elementos vistos durante o quiz">
+            <span>Café</span><span>Carro</span><span>GPS</span><span>Voz pela internet</span><span>Sacola</span><span>Segurança</span><span>Lentes</span><span>Materiais</span>
+        </div>
+        <p>O objetivo não era decorar oito respostas. Era perceber quantas histórias científicas podem estar escondidas em uma rotina comum.</p>
+        <div class="final-actions">
+            <a href="#inicio-quiz" class="quiz-start secondary">Refazer o quiz ↑</a>
+            <a href="cientistas.html" class="quiz-start">Conhecer as cientistas →</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h2>Elas na Ciência</h2>
+    <p>Conhecimento, representatividade e inspiração.</p>
+    <p>Projeto desenvolvido para a MTEC.</p>
+</footer>
+</body>
+</html>
