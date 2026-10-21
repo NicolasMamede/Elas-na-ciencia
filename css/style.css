@@ -1,108 +1,103 @@
+/* =========================================================
+   ARQUIVO CSS COMENTADO — ELAS NA CIÊNCIA
+   Os comentários curtos explicam a função de cada propriedade.
+   ========================================================= */
+
 /* =========================
    RESET
 ========================= */
-
+/* Estilos aplicados a: * */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* define o espaço externo */
+    padding: 0; /* define o espaço interno */
+    box-sizing: border-box; /* inclui borda e preenchimento no tamanho do elemento */
 }
 
+/* Estilos aplicados a: html */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* define a suavidade da rolagem */
 }
 
+/* Estilos aplicados a: body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #18324a;
-    background-color: #f7fbff;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; /* define a fonte usada */
+    color: #18324a; /* define a cor do texto */
+    background-color: #f7fbff; /* define a cor de fundo */
+    line-height: 1.6; /* define o espaçamento entre linhas */
 }
-
 
 /* =========================
    CABEÇALHO
 ========================= */
-
+/* Estilos aplicados a: header */
 header {
-    width: 100%;
-    min-height: 75px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 7%;
-
-    background-color: rgba(255, 255, 255, 0.96);
-    border-bottom: 1px solid #dceaf5;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    width: 100%; /* define a largura */
+    min-height: 75px; /* define a altura mínima */
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    justify-content: space-between; /* alinha itens no eixo principal */
+    padding: 0 7%; /* define o espaço interno */
+    background-color: rgba(255, 255, 255, 0.96); /* define a cor de fundo */
+    border-bottom: 1px solid #dceaf5; /* define a borda inferior */
+    position: sticky; /* define o modo de posicionamento */
+    top: 0; /* posiciona a partir do topo */
+    z-index: 1000; /* define a ordem de sobreposição */
 }
 
+/* Estilos aplicados a: .logo a */
 .logo a {
-    text-decoration: none;
-    color: #0c4f7d;
-
-    font-size: 24px;
-    font-weight: bold;
-
-    letter-spacing: 1px;
+    text-decoration: none; /* define decoração do texto */
+    color: #0c4f7d; /* define a cor do texto */
+    font-size: 24px; /* define o tamanho da fonte */
+    font-weight: bold; /* define a espessura da fonte */
+    letter-spacing: 1px; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: nav */
 nav {
-    display: flex;
-    gap: 28px;
+    display: flex; /* define o modelo de layout */
+    gap: 28px; /* define o espaço entre itens */
 }
 
+/* Estilos aplicados a: nav a */
 nav a {
-    text-decoration: none;
-    color: #244a66;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    position: relative;
-
-    transition: 0.3s;
+    text-decoration: none; /* define decoração do texto */
+    color: #244a66; /* define a cor do texto */
+    font-size: 15px; /* define o tamanho da fonte */
+    font-weight: 600; /* define a espessura da fonte */
+    position: relative; /* define o modo de posicionamento */
+    transition: 0.3s; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: nav a:hover */
 nav a:hover {
-    color: #0b78b8;
+    color: #0b78b8; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: nav a::after */
 nav a::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: -6px;
-
-    width: 0;
-    height: 2px;
-
-    background-color: #0b78b8;
-
-    transition: 0.3s;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    left: 0; /* posiciona a partir da esquerda */
+    bottom: -6px; /* posiciona a partir de baixo */
+    width: 0; /* define a largura */
+    height: 2px; /* define a altura */
+    background-color: #0b78b8; /* define a cor de fundo */
+    transition: 0.3s; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: nav a:hover::after */
 nav a:hover::after {
-    width: 100%;
+    width: 100%; /* define a largura */
 }
-
 
 /* =========================
    CAPA DA INDEX
 ========================= */
-
+/* Estilos aplicados a: .inicio */
 .inicio {
-    min-height: 90vh;
-
-    background-image:
-        linear-gradient(
+    min-height: 90vh; /* define a altura mínima */
+    background-image: linear-gradient(
             to right,
             rgba(255,255,255,0.98) 0%,
             rgba(255,255,255,0.92) 30%,
@@ -110,565 +105,506 @@ nav a:hover::after {
             rgba(255,255,255,0.12) 75%,
             rgba(255,255,255,0) 100%
         ),
-        url("../img/fundo.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-
-    padding: 80px 8%;
+        url("../img/fundo.png"); /* define a imagem ou gradiente de fundo */
+    background-size: cover; /* define o tamanho do fundo */
+    background-position: center; /* define a posição do fundo */
+    background-repeat: no-repeat; /* controla a repetição do fundo */
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    padding: 80px 8%; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: .inicio-texto */
 .inicio-texto {
-    max-width: 600px;
+    max-width: 600px; /* define a largura máxima */
 }
 
+/* Estilos aplicados a: .destaque */
 .destaque {
-    display: inline-block;
-
-    color: #0b78b8;
-    background-color: #e5f4fc;
-
-    padding: 8px 14px;
-
-    border-radius: 20px;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    margin-bottom: 18px;
+    display: inline-block; /* define o modelo de layout */
+    color: #0b78b8; /* define a cor do texto */
+    background-color: #e5f4fc; /* define a cor de fundo */
+    padding: 8px 14px; /* define o espaço interno */
+    border-radius: 20px; /* arredonda os cantos */
+    font-size: 14px; /* define o tamanho da fonte */
+    font-weight: bold; /* define a espessura da fonte */
+    margin-bottom: 18px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .inicio h1 */
 .inicio h1 {
-    color: #0a3d62;
-
-    font-size: 68px;
-    line-height: 1;
-
-    margin-bottom: 18px;
+    color: #0a3d62; /* define a cor do texto */
+    font-size: 68px; /* define o tamanho da fonte */
+    line-height: 1; /* define o espaçamento entre linhas */
+    margin-bottom: 18px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .inicio h2 */
 .inicio h2 {
-    color: #215d82;
-
-    font-size: 31px;
-
-    margin-bottom: 18px;
+    color: #215d82; /* define a cor do texto */
+    font-size: 31px; /* define o tamanho da fonte */
+    margin-bottom: 18px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .inicio-texto > p:not(.destaque) */
 .inicio-texto > p:not(.destaque) {
-    max-width: 520px;
-
-    color: #405f75;
-
-    font-size: 18px;
-
-    margin-bottom: 30px;
+    max-width: 520px; /* define a largura máxima */
+    color: #405f75; /* define a cor do texto */
+    font-size: 18px; /* define o tamanho da fonte */
+    margin-bottom: 30px; /* define o espaço externo abaixo */
 }
-
 
 /* =========================
    BOTÕES
 ========================= */
-
+/* Estilos aplicados a: .botao */
 .botao {
-    display: inline-block;
-
-    text-decoration: none;
-
-    background-color: #0b78b8;
-    color: white;
-
-    padding: 14px 28px;
-
-    border-radius: 8px;
-
-    font-weight: bold;
-
-    box-shadow: 0 8px 20px rgba(11, 120, 184, 0.22);
-
-    transition: 0.3s;
+    display: inline-block; /* define o modelo de layout */
+    text-decoration: none; /* define decoração do texto */
+    background-color: #0b78b8; /* define a cor de fundo */
+    color: white; /* define a cor do texto */
+    padding: 14px 28px; /* define o espaço interno */
+    border-radius: 8px; /* arredonda os cantos */
+    font-weight: bold; /* define a espessura da fonte */
+    box-shadow: 0 8px 20px rgba(11, 120, 184, 0.22); /* cria sombra ao redor do elemento */
+    transition: 0.3s; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .botao:hover */
 .botao:hover {
-    background-color: #075e92;
-
-    transform: translateY(-3px);
-
-    box-shadow: 0 12px 25px rgba(11, 120, 184, 0.3);
+    background-color: #075e92; /* define a cor de fundo */
+    transform: translateY(-3px); /* aplica movimento, rotação ou escala */
+    box-shadow: 0 12px 25px rgba(11, 120, 184, 0.3); /* cria sombra ao redor do elemento */
 }
-
 
 /* =========================
    SEÇÕES GERAIS
 ========================= */
-
+/* Estilos aplicados a: main section:not(.inicio) */
 main section:not(.inicio) {
-    padding: 80px 8%;
+    padding: 80px 8%; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: main section h2 */
 main section h2 {
-    color: #0a3d62;
-
-    font-size: 34px;
-
-    margin-bottom: 16px;
+    color: #0a3d62; /* define a cor do texto */
+    font-size: 34px; /* define o tamanho da fonte */
+    margin-bottom: 16px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: main section > p */
 main section > p {
-    max-width: 800px;
-
-    color: #5a7285;
-
-    font-size: 17px;
-
-    margin-bottom: 30px;
+    max-width: 800px; /* define a largura máxima */
+    color: #5a7285; /* define a cor do texto */
+    font-size: 17px; /* define o tamanho da fonte */
+    margin-bottom: 30px; /* define o espaço externo abaixo */
 }
-
 
 /* =========================
    SOBRE O PROJETO
 ========================= */
-
+/* Estilos aplicados a: .sobre */
 .sobre {
-    text-align: center;
-    background-color: white;
+    text-align: center; /* alinha o texto */
+    background-color: white; /* define a cor de fundo */
 }
 
+/* Estilos aplicados a: .sobre p */
 .sobre p {
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 850px;
-
-    margin-bottom: 15px;
+    margin-left: auto; /* define o espaço externo à esquerda */
+    margin-right: auto; /* define o espaço externo à direita */
+    max-width: 850px; /* define a largura máxima */
+    margin-bottom: 15px; /* define o espaço externo abaixo */
 }
-
 
 /* =========================
    CARDS
 ========================= */
-
+/* Estilos aplicados a: .cards */
 .cards {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 24px;
-
-    margin-top: 35px;
-    margin-bottom: 35px;
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: repeat(4, 1fr); /* define as colunas da grade */
+    gap: 24px; /* define o espaço entre itens */
+    margin-top: 35px; /* define o espaço externo acima */
+    margin-bottom: 35px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .card */
 .card {
-    background-color: white;
-
-    border-radius: 14px;
-
-    overflow: hidden;
-
-    border: 1px solid #e1edf5;
-
-    box-shadow: 0 7px 22px rgba(45, 94, 125, 0.08);
-
-    display: flex;
-    flex-direction: column;
-
-    min-height: 490px;
-
-    transition:
-        transform 0.3s ease,
+    background-color: white; /* define a cor de fundo */
+    border-radius: 14px; /* arredonda os cantos */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    border: 1px solid #e1edf5; /* define a borda */
+    box-shadow: 0 7px 22px rgba(45, 94, 125, 0.08); /* cria sombra ao redor do elemento */
+    display: flex; /* define o modelo de layout */
+    flex-direction: column; /* define a direção dos itens flexíveis */
+    min-height: 490px; /* define a altura mínima */
+    transition: transform 0.3s ease,
         box-shadow 0.3s ease,
-        border-color 0.3s ease;
+        border-color 0.3s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .card:hover */
 .card:hover {
-    transform: translateY(-8px);
-
-    border-color: #b8d8e9;
-
-    box-shadow: 0 18px 35px rgba(45, 94, 125, 0.17);
+    transform: translateY(-8px); /* aplica movimento, rotação ou escala */
+    border-color: #b8d8e9; /* define a cor da borda */
+    box-shadow: 0 18px 35px rgba(45, 94, 125, 0.17); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .card img */
 .card img {
-    width: 100%;
-    height: 250px;
-
-    object-fit: cover;
-    object-position: center top;
-
-    display: block;
-
-    transition: transform 0.4s ease;
+    width: 100%; /* define a largura */
+    height: 250px; /* define a altura */
+    object-fit: cover; /* define como a imagem ocupa seu espaço */
+    object-position: center top; /* define a posição da imagem dentro do espaço */
+    display: block; /* define o modelo de layout */
+    transition: transform 0.4s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .card:hover img */
 .card:hover img {
-    transform: scale(1.03);
+    transform: scale(1.03); /* aplica movimento, rotação ou escala */
 }
 
+/* Estilos aplicados a: .card h3 */
 .card h3 {
-    color: #0a3d62;
-
-    font-size: 22px;
-
-    margin: 22px 18px 5px;
+    color: #0a3d62; /* define a cor do texto */
+    font-size: 22px; /* define o tamanho da fonte */
+    margin: 22px 18px 5px; /* define o espaço externo */
 }
 
+/* Estilos aplicados a: .card p */
 .card p {
-    margin: 0 18px 12px;
-
-    color: #5c7282;
-
-    font-size: 15px;
+    margin: 0 18px 12px; /* define o espaço externo */
+    color: #5c7282; /* define a cor do texto */
+    font-size: 15px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .card .area */
 .card .area {
-    color: #0b78b8;
-
-    font-weight: bold;
+    color: #0b78b8; /* define a cor do texto */
+    font-weight: bold; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .card a */
 .card a {
-    margin: auto 18px 24px;
-
-    color: #0b78b8;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    transition: 0.3s;
+    margin: auto 18px 24px; /* define o espaço externo */
+    color: #0b78b8; /* define a cor do texto */
+    text-decoration: none; /* define decoração do texto */
+    font-weight: bold; /* define a espessura da fonte */
+    transition: 0.3s; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .card a:hover */
 .card a:hover {
-    color: #075e92;
-
-    transform: translateX(4px);
+    color: #075e92; /* define a cor do texto */
+    transform: translateX(4px); /* aplica movimento, rotação ou escala */
 }
-
 
 /* =========================
    DESTAQUES DA INDEX
 ========================= */
-
+/* Estilos aplicados a: .destaques */
 .destaques {
-    background-color: #f4faff;
+    background-color: #f4faff; /* define a cor de fundo */
 }
-
 
 /* =========================
    INVENÇÕES DO COTIDIANO
 ========================= */
-
+/* Estilos aplicados a: .cotidiano */
 .cotidiano {
-    background-color: white;
+    background-color: white; /* define a cor de fundo */
 }
 
+/* Estilos aplicados a: .cotidiano .card */
 .cotidiano .card {
-    border-top: 4px solid #3ca6d9;
+    border-top: 4px solid #3ca6d9; /* define a borda superior */
 }
-
 
 /* =========================
    LINHA DO TEMPO DA INDEX
 ========================= */
-
+/* Estilos aplicados a: .linha-resumo */
 .linha-resumo {
-    background-color: #eef8fd;
+    background-color: #eef8fd; /* define a cor de fundo */
 }
 
+/* Estilos aplicados a: .linha */
 .linha {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 22px;
-
-    margin: 40px 0;
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: repeat(4, 1fr); /* define as colunas da grade */
+    gap: 22px; /* define o espaço entre itens */
+    margin: 40px 0; /* define o espaço externo */
 }
 
+/* Estilos aplicados a: .evento */
 .evento {
-    position: relative;
-
-    background-color: white;
-
-    padding: 28px 22px;
-
-    border-radius: 12px;
-
-    border: 1px solid #dceaf3;
-
-    box-shadow: 0 5px 16px rgba(65, 103, 128, 0.08);
-
-    transition: 0.3s;
+    position: relative; /* define o modo de posicionamento */
+    background-color: white; /* define a cor de fundo */
+    padding: 28px 22px; /* define o espaço interno */
+    border-radius: 12px; /* arredonda os cantos */
+    border: 1px solid #dceaf3; /* define a borda */
+    box-shadow: 0 5px 16px rgba(65, 103, 128, 0.08); /* cria sombra ao redor do elemento */
+    transition: 0.3s; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .evento:hover */
 .evento:hover {
-    transform: translateY(-6px);
-
-    border-color: #5bb3de;
-
-    box-shadow: 0 12px 28px rgba(65, 103, 128, 0.14);
+    transform: translateY(-6px); /* aplica movimento, rotação ou escala */
+    border-color: #5bb3de; /* define a cor da borda */
+    box-shadow: 0 12px 28px rgba(65, 103, 128, 0.14); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .evento span */
 .evento span {
-    display: inline-block;
-
-    color: white;
-    background-color: #0b78b8;
-
-    padding: 6px 12px;
-
-    border-radius: 16px;
-
-    font-weight: bold;
-
-    margin-bottom: 14px;
+    display: inline-block; /* define o modelo de layout */
+    color: white; /* define a cor do texto */
+    background-color: #0b78b8; /* define a cor de fundo */
+    padding: 6px 12px; /* define o espaço interno */
+    border-radius: 16px; /* arredonda os cantos */
+    font-weight: bold; /* define a espessura da fonte */
+    margin-bottom: 14px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .evento h3 */
 .evento h3 {
-    color: #0a3d62;
-
-    margin-bottom: 8px;
+    color: #0a3d62; /* define a cor do texto */
+    margin-bottom: 8px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .evento p */
 .evento p {
-    color: #5c7282;
+    color: #5c7282; /* define a cor do texto */
 }
-
 
 /* =========================
    QUIZ DA INDEX
 ========================= */
-
+/* Estilos aplicados a: .quiz-chamada */
 .quiz-chamada {
-    text-align: center;
-
-    background:
-        linear-gradient(
+    text-align: center; /* alinha o texto */
+    background: linear-gradient(
             135deg,
             #0a4b74,
             #0b78b8
-        );
-
-    color: white;
+        ); /* define o fundo */
+    color: white; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .quiz-chamada h2 */
 .quiz-chamada h2 {
-    color: white;
-
-    font-size: 38px;
+    color: white; /* define a cor do texto */
+    font-size: 38px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .quiz-chamada p */
 .quiz-chamada p {
-    color: #eaf7ff;
-
-    margin-left: auto;
-    margin-right: auto;
+    color: #eaf7ff; /* define a cor do texto */
+    margin-left: auto; /* define o espaço externo à esquerda */
+    margin-right: auto; /* define o espaço externo à direita */
 }
 
+/* Estilos aplicados a: .quiz-chamada .botao */
 .quiz-chamada .botao {
-    background-color: white;
-    color: #0b6fa8;
+    background-color: white; /* define a cor de fundo */
+    color: #0b6fa8; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .quiz-chamada .botao:hover */
 .quiz-chamada .botao:hover {
-    background-color: #eaf7ff;
+    background-color: #eaf7ff; /* define a cor de fundo */
 }
-
 
 /* =========================
    TOPO DAS PÁGINAS INTERNAS
 ========================= */
-
+/* Estilos aplicados a: .pagina-topo */
 .pagina-topo {
-    text-align: center;
-
-    background-color: white;
-
-    padding: 70px 8% 40px;
+    text-align: center; /* alinha o texto */
+    background-color: white; /* define a cor de fundo */
+    padding: 70px 8% 40px; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: .pagina-topo .destaque */
 .pagina-topo .destaque {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .pagina-topo h1 */
 .pagina-topo h1 {
-    color: #0a3d62;
-
-    font-size: 48px;
-
-    margin-bottom: 18px;
+    color: #0a3d62; /* define a cor do texto */
+    font-size: 48px; /* define o tamanho da fonte */
+    margin-bottom: 18px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: .pagina-topo > p */
 .pagina-topo > p {
-    max-width: 850px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    color: #5a7285;
-
-    font-size: 17px;
+    max-width: 850px; /* define a largura máxima */
+    margin-left: auto; /* define o espaço externo à esquerda */
+    margin-right: auto; /* define o espaço externo à direita */
+    color: #5a7285; /* define a cor do texto */
+    font-size: 17px; /* define o tamanho da fonte */
 }
-
 
 /* =========================
    LISTA DE CIENTISTAS
 ========================= */
-
+/* Estilos aplicados a: .lista-cientistas */
 .lista-cientistas {
-    background-color: #f4faff;
-
-    padding: 45px 8% 90px;
+    background-color: #f4faff; /* define a cor de fundo */
+    padding: 45px 8% 90px; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: .lista-cientistas .cards */
 .lista-cientistas .cards {
-    margin-top: 0;
+    margin-top: 0; /* define o espaço externo acima */
 }
-
 
 /* =========================
    RODAPÉ
 ========================= */
-
+/* Estilos aplicados a: footer */
 footer {
-    background-color: #082f49;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 45px 20px;
+    background-color: #082f49; /* define a cor de fundo */
+    color: white; /* define a cor do texto */
+    text-align: center; /* alinha o texto */
+    padding: 45px 20px; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: footer h2 */
 footer h2 {
-    font-size: 25px;
-
-    margin-bottom: 10px;
+    font-size: 25px; /* define o tamanho da fonte */
+    margin-bottom: 10px; /* define o espaço externo abaixo */
 }
 
+/* Estilos aplicados a: footer p */
 footer p {
-    color: #c7dfea;
-
-    margin-bottom: 6px;
+    color: #c7dfea; /* define a cor do texto */
+    margin-bottom: 6px; /* define o espaço externo abaixo */
 }
-
 
 /* =========================
    RESPONSIVIDADE - TABLET
 ========================= */
-
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 1100px) {
-
+    /* Estilos aplicados a: .cards */
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* define as colunas da grade */
     }
 
+    /* Estilos aplicados a: .linha */
     .linha {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* define as colunas da grade */
     }
 
+    /* Estilos aplicados a: .inicio h1 */
     .inicio h1 {
-        font-size: 54px;
+        font-size: 54px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: nav */
     nav {
-        gap: 16px;
+        gap: 16px; /* define o espaço entre itens */
     }
 
 }
 
-
 /* =========================
    RESPONSIVIDADE - CELULAR
 ========================= */
-
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 750px) {
-
+    /* Estilos aplicados a: header */
     header {
-        flex-direction: column;
-
-        padding: 18px 5%;
+        flex-direction: column; /* define a direção dos itens flexíveis */
+        padding: 18px 5%; /* define o espaço interno */
     }
 
+    /* Estilos aplicados a: .logo */
     .logo {
-        margin-bottom: 8px;
+        margin-bottom: 8px; /* define o espaço externo abaixo */
     }
 
+    /* Estilos aplicados a: nav */
     nav {
-        margin-top: 10px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 12px 18px;
+        margin-top: 10px; /* define o espaço externo acima */
+        flex-wrap: wrap; /* permite quebrar itens em linhas */
+        justify-content: center; /* alinha itens no eixo principal */
+        gap: 12px 18px; /* define o espaço entre itens */
     }
 
+    /* Estilos aplicados a: .inicio */
     .inicio {
-        min-height: 80vh;
-
-        padding: 60px 6%;
-
-        background-position: 65% center;
-
-        background-image:
-            linear-gradient(
+        min-height: 80vh; /* define a altura mínima */
+        padding: 60px 6%; /* define o espaço interno */
+        background-position: 65% center; /* define a posição do fundo */
+        background-image: linear-gradient(
                 rgba(255,255,255,0.94),
                 rgba(255,255,255,0.85)
             ),
-            url("../img/fundo.png");
+            url("../img/fundo.png"); /* define a imagem ou gradiente de fundo */
     }
 
+    /* Estilos aplicados a: .inicio h1 */
     .inicio h1 {
-        font-size: 44px;
+        font-size: 44px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .inicio h2 */
     .inicio h2 {
-        font-size: 25px;
+        font-size: 25px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .inicio-texto > p:not(.destaque) */
     .inicio-texto > p:not(.destaque) {
-        font-size: 16px;
+        font-size: 16px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .cards */
     .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* define as colunas da grade */
     }
 
+    /* Estilos aplicados a: .linha */
     .linha {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* define as colunas da grade */
     }
 
+    /* Estilos aplicados a: .card */
     .card {
-        min-height: auto;
+        min-height: auto; /* define a altura mínima */
     }
 
+    /* Estilos aplicados a: .card img */
     .card img {
-        height: 280px;
+        height: 280px; /* define a altura */
     }
 
+    /* Estilos aplicados a: main section:not(.inicio) */
     main section:not(.inicio) {
-        padding: 60px 6%;
+        padding: 60px 6%; /* define o espaço interno */
     }
 
+    /* Estilos aplicados a: main section h2 */
     main section h2 {
-        font-size: 29px;
+        font-size: 29px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .pagina-topo */
     .pagina-topo {
-        padding: 55px 6% 30px;
+        padding: 55px 6% 30px; /* define o espaço interno */
     }
 
+    /* Estilos aplicados a: .pagina-topo h1 */
     .pagina-topo h1 {
-        font-size: 38px;
+        font-size: 38px; /* define o tamanho da fonte */
     }
-.quiz-chamada h2 {
-        font-size: 31px;
+
+    /* Estilos aplicados a: .quiz-chamada h2 */
+    .quiz-chamada h2 {
+        font-size: 31px; /* define o tamanho da fonte */
     }
 
 }
@@ -677,1710 +613,2225 @@ footer p {
    LINHA DO TEMPO IMERSIVA
    Página feita apenas com HTML + CSS
 ========================================================= */
-
+/* Estilos aplicados a: .timeline-page */
 .timeline-page {
-    background: #061c2b;
+    background: #061c2b; /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-page header */
 .timeline-page header {
-    background-color: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.94); /* define a cor de fundo */
+    backdrop-filter: blur(14px); /* aplica efeito no fundo atrás do elemento */
 }
 
+/* Estilos aplicados a: .timeline-page .nav-ativo */
 .timeline-page .nav-ativo {
-    color: #0b78b8;
+    color: #0b78b8; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .timeline-page .nav-ativo::after */
 .timeline-page .nav-ativo::after {
-    width: 100%;
+    width: 100%; /* define a largura */
 }
 
+/* Estilos aplicados a: .timeline-experiencia */
 .timeline-experiencia {
-    position: relative;
-    background: #071f30;
+    position: relative; /* define o modo de posicionamento */
+    background: #071f30; /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-page main section.timeline-cena */
 .timeline-page main section.timeline-cena {
-    padding: 0;
+    padding: 0; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: .timeline-cena */
 .timeline-cena {
-    position: relative;
-    min-height: calc(100vh - 75px);
-    overflow: hidden;
-    scroll-margin-top: 75px;
+    position: relative; /* define o modo de posicionamento */
+    min-height: calc(100vh - 75px); /* define a altura mínima */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    scroll-margin-top: 75px; /* configura o comportamento da rolagem */
 }
 
+/* Estilos aplicados a: .timeline-abertura */
 .timeline-abertura {
-    display: grid;
-    place-items: center;
-    isolation: isolate;
-    color: white;
-    background:
-        radial-gradient(circle at 78% 25%, rgba(52, 176, 228, 0.24), transparent 24%),
+    display: grid; /* define o modelo de layout */
+    place-items: center; /* alinha itens nos dois eixos */
+    isolation: isolate; /* cria um novo contexto de empilhamento */
+    color: white; /* define a cor do texto */
+    background: radial-gradient(circle at 78% 25%, rgba(52, 176, 228, 0.24), transparent 24%),
         radial-gradient(circle at 18% 75%, rgba(28, 118, 170, 0.22), transparent 26%),
-        linear-gradient(135deg, #041723 0%, #082b42 55%, #0a4667 100%);
+        linear-gradient(135deg, #041723 0%, #082b42 55%, #0a4667 100%); /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-abertura::before, .timeline-abertura::after */
 .timeline-abertura::before,
 .timeline-abertura::after {
-    content: "";
-    position: absolute;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    z-index: -1;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    border: 1px solid rgba(255, 255, 255, 0.12); /* define a borda */
+    border-radius: 50%; /* arredonda os cantos */
+    z-index: -1; /* define a ordem de sobreposição */
 }
 
+/* Estilos aplicados a: .timeline-abertura::before */
 .timeline-abertura::before {
-    width: 460px;
-    height: 460px;
-    right: -150px;
-    top: -170px;
+    width: 460px; /* define a largura */
+    height: 460px; /* define a altura */
+    right: -150px; /* posiciona a partir da direita */
+    top: -170px; /* posiciona a partir do topo */
 }
 
+/* Estilos aplicados a: .timeline-abertura::after */
 .timeline-abertura::after {
-    width: 720px;
-    height: 720px;
-    left: -400px;
-    bottom: -430px;
+    width: 720px; /* define a largura */
+    height: 720px; /* define a altura */
+    left: -400px; /* posiciona a partir da esquerda */
+    bottom: -430px; /* posiciona a partir de baixo */
 }
 
+/* Estilos aplicados a: .timeline-abertura-conteudo */
 .timeline-abertura-conteudo {
-    width: min(1000px, 84%);
-    position: relative;
-    z-index: 3;
+    width: min(1000px, 84%); /* define a largura */
+    position: relative; /* define o modo de posicionamento */
+    z-index: 3; /* define a ordem de sobreposição */
 }
 
+/* Estilos aplicados a: .timeline-kicker */
 .timeline-kicker {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
-    color: #7bd6ff;
-    text-transform: uppercase;
-    letter-spacing: 0.22em;
-    font-size: 13px;
-    font-weight: 800;
+    display: inline-flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    gap: 12px; /* define o espaço entre itens */
+    margin-bottom: 20px; /* define o espaço externo abaixo */
+    color: #7bd6ff; /* define a cor do texto */
+    text-transform: uppercase; /* transforma maiúsculas/minúsculas */
+    letter-spacing: 0.22em; /* define o espaço entre letras */
+    font-size: 13px; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .timeline-kicker::before */
 .timeline-kicker::before {
-    content: "";
-    width: 48px;
-    height: 2px;
-    background: currentColor;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    width: 48px; /* define a largura */
+    height: 2px; /* define a altura */
+    background: currentColor; /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-abertura h1 */
 .timeline-abertura h1 {
-    max-width: 950px;
-    margin-bottom: 24px;
-    color: white;
-    font-size: clamp(52px, 7.6vw, 110px);
-    line-height: 0.94;
-    letter-spacing: -0.055em;
+    max-width: 950px; /* define a largura máxima */
+    margin-bottom: 24px; /* define o espaço externo abaixo */
+    color: white; /* define a cor do texto */
+    font-size: clamp(52px, 7.6vw, 110px); /* define o tamanho da fonte */
+    line-height: 0.94; /* define o espaçamento entre linhas */
+    letter-spacing: -0.055em; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .timeline-abertura-conteudo > p:not(.timeline-kicker) */
 .timeline-abertura-conteudo > p:not(.timeline-kicker) {
-    max-width: 720px;
-    margin-bottom: 34px;
-    color: #d4eaf5;
-    font-size: clamp(17px, 1.6vw, 22px);
+    max-width: 720px; /* define a largura máxima */
+    margin-bottom: 34px; /* define o espaço externo abaixo */
+    color: #d4eaf5; /* define a cor do texto */
+    font-size: clamp(17px, 1.6vw, 22px); /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .timeline-descer */
 .timeline-descer {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
+    display: inline-flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    gap: 14px; /* define o espaço entre itens */
+    color: white; /* define a cor do texto */
+    text-decoration: none; /* define decoração do texto */
+    font-weight: 700; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .timeline-descer strong */
 .timeline-descer strong {
-    width: 44px;
-    height: 44px;
-    display: grid;
-    place-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 50%;
-    font-size: 20px;
-    animation: timeline-seta 1.6s ease-in-out infinite;
+    width: 44px; /* define a largura */
+    height: 44px; /* define a altura */
+    display: grid; /* define o modelo de layout */
+    place-items: center; /* alinha itens nos dois eixos */
+    border: 1px solid rgba(255, 255, 255, 0.35); /* define a borda */
+    border-radius: 50%; /* arredonda os cantos */
+    font-size: 20px; /* define o tamanho da fonte */
+    animation: timeline-seta 1.6s ease-in-out infinite; /* aplica uma animação */
 }
 
+/* Define as etapas desta animação. */
 @keyframes timeline-seta {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(7px); }
+    /* Estilos aplicados a: 0%, 100% */
+    0%, 100% {
+        transform: translateY(0); /* aplica movimento, rotação ou escala */
+    }
+
+    /* Estilos aplicados a: 50% */
+    50% {
+        transform: translateY(7px); /* aplica movimento, rotação ou escala */
+    }
+
 }
 
+/* Estilos aplicados a: .timeline-abertura-anos */
 .timeline-abertura-anos {
-    position: absolute;
-    right: 5%;
-    bottom: 8%;
-    display: flex;
-    gap: 22px;
-    color: rgba(255,255,255,0.20);
-    font-size: clamp(20px, 3vw, 46px);
-    font-weight: 900;
-    transform: rotate(-6deg);
+    position: absolute; /* define o modo de posicionamento */
+    right: 5%; /* posiciona a partir da direita */
+    bottom: 8%; /* posiciona a partir de baixo */
+    display: flex; /* define o modelo de layout */
+    gap: 22px; /* define o espaço entre itens */
+    color: rgba(255,255,255,0.20); /* define a cor do texto */
+    font-size: clamp(20px, 3vw, 46px); /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    transform: rotate(-6deg); /* aplica movimento, rotação ou escala */
 }
 
+/* Estilos aplicados a: .timeline-momento */
 .timeline-momento {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    color: #173246;
-    background:
-        radial-gradient(circle at 88% 18%, rgba(42, 164, 213, 0.13), transparent 25%),
-        #f5fbff;
+    display: grid; /* define o modelo de layout */
+    place-items: center; /* alinha itens nos dois eixos */
+    min-height: 100vh; /* define a altura mínima */
+    color: #173246; /* define a cor do texto */
+    background: radial-gradient(circle at 88% 18%, rgba(42, 164, 213, 0.13), transparent 25%),
+        #f5fbff; /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-momento.timeline-invertido */
 .timeline-momento.timeline-invertido {
-    background:
-        radial-gradient(circle at 12% 82%, rgba(41, 143, 190, 0.13), transparent 28%),
-        #eaf6fc;
+    background: radial-gradient(circle at 12% 82%, rgba(41, 143, 190, 0.13), transparent 28%),
+        #eaf6fc; /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-grid */
 .timeline-grid {
-    position: relative;
-    z-index: 3;
-    width: min(1180px, 86%);
-    min-height: 720px;
-    display: grid;
-    grid-template-columns: minmax(300px, 0.9fr) minmax(360px, 1.1fr);
-    align-items: center;
-    gap: clamp(60px, 8vw, 130px);
+    position: relative; /* define o modo de posicionamento */
+    z-index: 3; /* define a ordem de sobreposição */
+    width: min(1180px, 86%); /* define a largura */
+    min-height: 720px; /* define a altura mínima */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: minmax(300px, 0.9fr) minmax(360px, 1.1fr); /* define as colunas da grade */
+    align-items: center; /* alinha itens no eixo secundário */
+    gap: clamp(60px, 8vw, 130px); /* define o espaço entre itens */
 }
 
+/* Estilos aplicados a: .timeline-invertido .timeline-grid */
 .timeline-invertido .timeline-grid {
-    grid-template-columns: minmax(360px, 1.1fr) minmax(300px, 0.9fr);
+    grid-template-columns: minmax(360px, 1.1fr) minmax(300px, 0.9fr); /* define as colunas da grade */
 }
 
+/* Estilos aplicados a: .timeline-invertido .timeline-imagem */
 .timeline-invertido .timeline-imagem {
-    grid-column: 2;
+    grid-column: 2; /* define onde o item ocupa colunas */
 }
 
+/* Estilos aplicados a: .timeline-invertido .timeline-texto */
 .timeline-invertido .timeline-texto {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1; /* define onde o item ocupa colunas */
+    grid-row: 1; /* define onde o item ocupa linhas */
 }
 
+/* Estilos aplicados a: .timeline-imagem */
 .timeline-imagem {
-    position: relative;
-    height: min(68vh, 650px);
-    min-height: 500px;
+    position: relative; /* define o modo de posicionamento */
+    height: min(68vh, 650px); /* define a altura */
+    min-height: 500px; /* define a altura mínima */
 }
 
+/* Estilos aplicados a: .timeline-imagem::before */
 .timeline-imagem::before {
-    content: "";
-    position: absolute;
-    inset: 28px -26px -28px 26px;
-    border: 1px solid rgba(11, 120, 184, 0.28);
-    border-radius: 4px;
-    z-index: -1;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    inset: 28px -26px -28px 26px; /* define top/right/bottom/left de uma vez */
+    border: 1px solid rgba(11, 120, 184, 0.28); /* define a borda */
+    border-radius: 4px; /* arredonda os cantos */
+    z-index: -1; /* define a ordem de sobreposição */
 }
 
+/* Estilos aplicados a: .timeline-imagem img */
 .timeline-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-    filter: saturate(0.82) contrast(1.04);
-    box-shadow: 0 28px 70px rgba(15, 63, 91, 0.20);
+    width: 100%; /* define a largura */
+    height: 100%; /* define a altura */
+    object-fit: cover; /* define como a imagem ocupa seu espaço */
+    object-position: center top; /* define a posição da imagem dentro do espaço */
+    display: block; /* define o modelo de layout */
+    filter: saturate(0.82) contrast(1.04); /* aplica efeitos visuais */
+    box-shadow: 0 28px 70px rgba(15, 63, 91, 0.20); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .timeline-numero */
 .timeline-numero {
-    position: absolute;
-    left: -24px;
-    bottom: -12px;
-    color: #0b78b8;
-    font-size: clamp(48px, 6vw, 88px);
-    line-height: 1;
-    font-weight: 900;
-    letter-spacing: -0.07em;
+    position: absolute; /* define o modo de posicionamento */
+    left: -24px; /* posiciona a partir da esquerda */
+    bottom: -12px; /* posiciona a partir de baixo */
+    color: #0b78b8; /* define a cor do texto */
+    font-size: clamp(48px, 6vw, 88px); /* define o tamanho da fonte */
+    line-height: 1; /* define o espaçamento entre linhas */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: -0.07em; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .timeline-texto */
 .timeline-texto {
-    max-width: 620px;
+    max-width: 620px; /* define a largura máxima */
 }
 
+/* Estilos aplicados a: .timeline-data */
 .timeline-data {
-    margin-bottom: 14px !important;
-    color: #0b78b8 !important;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 13px !important;
-    font-weight: 800;
+    margin-bottom: 14px !important; /* define o espaço externo abaixo */
+    color: #0b78b8 !important; /* define a cor do texto */
+    text-transform: uppercase; /* transforma maiúsculas/minúsculas */
+    letter-spacing: 0.18em; /* define o espaço entre letras */
+    font-size: 13px !important; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .timeline-texto h2 */
 .timeline-texto h2 {
-    margin-bottom: 18px !important;
-    color: #073e60 !important;
-    font-size: clamp(44px, 6vw, 82px) !important;
-    line-height: 0.95;
-    letter-spacing: -0.055em;
+    margin-bottom: 18px !important; /* define o espaço externo abaixo */
+    color: #073e60 !important; /* define a cor do texto */
+    font-size: clamp(44px, 6vw, 82px) !important; /* define o tamanho da fonte */
+    line-height: 0.95; /* define o espaçamento entre linhas */
+    letter-spacing: -0.055em; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .timeline-texto h3 */
 .timeline-texto h3 {
-    max-width: 620px;
-    margin-bottom: 20px;
-    color: #234e67;
-    font-size: clamp(20px, 2vw, 29px);
-    line-height: 1.22;
-    font-weight: 600;
+    max-width: 620px; /* define a largura máxima */
+    margin-bottom: 20px; /* define o espaço externo abaixo */
+    color: #234e67; /* define a cor do texto */
+    font-size: clamp(20px, 2vw, 29px); /* define o tamanho da fonte */
+    line-height: 1.22; /* define o espaçamento entre linhas */
+    font-weight: 600; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .timeline-texto > p:not(.timeline-data) */
 .timeline-texto > p:not(.timeline-data) {
-    max-width: 590px;
-    margin-bottom: 24px !important;
-    color: #587183 !important;
-    font-size: 17px !important;
-    line-height: 1.8;
+    max-width: 590px; /* define a largura máxima */
+    margin-bottom: 24px !important; /* define o espaço externo abaixo */
+    color: #587183 !important; /* define a cor do texto */
+    font-size: 17px !important; /* define o tamanho da fonte */
+    line-height: 1.8; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .timeline-impacto */
 .timeline-impacto {
-    display: block;
-    max-width: 520px;
-    padding-left: 18px;
-    border-left: 3px solid #36a6d7;
-    color: #0a4d73;
-    font-size: 15px;
-    font-weight: 800;
+    display: block; /* define o modelo de layout */
+    max-width: 520px; /* define a largura máxima */
+    padding-left: 18px; /* define o espaço interno à esquerda */
+    border-left: 3px solid #36a6d7; /* define a borda esquerda */
+    color: #0a4d73; /* define a cor do texto */
+    font-size: 15px; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .timeline-ano */
 .timeline-ano {
-    position: absolute;
-    right: -0.05em;
-    bottom: -0.18em;
-    z-index: 0;
-    color: rgba(8, 76, 112, 0.055);
-    font-size: clamp(170px, 28vw, 500px);
-    line-height: 0.78;
-    font-weight: 900;
-    letter-spacing: -0.095em;
-    user-select: none;
+    position: absolute; /* define o modo de posicionamento */
+    right: -0.05em; /* posiciona a partir da direita */
+    bottom: -0.18em; /* posiciona a partir de baixo */
+    z-index: 0; /* define a ordem de sobreposição */
+    color: rgba(8, 76, 112, 0.055); /* define a cor do texto */
+    font-size: clamp(170px, 28vw, 500px); /* define o tamanho da fonte */
+    line-height: 0.78; /* define o espaçamento entre linhas */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: -0.095em; /* define o espaço entre letras */
+    user-select: none; /* controla seleção de texto */
 }
 
+/* Estilos aplicados a: .timeline-invertido .timeline-ano */
 .timeline-invertido .timeline-ano {
-    left: -0.08em;
-    right: auto;
+    left: -0.08em; /* posiciona a partir da esquerda */
+    right: auto; /* posiciona a partir da direita */
 }
 
+/* Estilos aplicados a: .timeline-eixo */
 .timeline-eixo {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    z-index: 2;
+    position: absolute; /* define o modo de posicionamento */
+    left: 50%; /* posiciona a partir da esquerda */
+    top: 0; /* posiciona a partir do topo */
+    bottom: 0; /* posiciona a partir de baixo */
+    width: 1px; /* define a largura */
+    z-index: 2; /* define a ordem de sobreposição */
     background: linear-gradient(
         to bottom,
         transparent 0%,
         rgba(11, 120, 184, 0.28) 10%,
         rgba(11, 120, 184, 0.28) 90%,
         transparent 100%
-    );
+    ); /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-ponto */
 .timeline-ponto {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 17px;
-    height: 17px;
-    transform: translate(-50%, -50%);
-    border: 4px solid #f5fbff;
-    border-radius: 50%;
-    background: #0b78b8;
-    box-shadow: 0 0 0 8px rgba(11,120,184,0.12);
+    position: absolute; /* define o modo de posicionamento */
+    left: 50%; /* posiciona a partir da esquerda */
+    top: 50%; /* posiciona a partir do topo */
+    width: 17px; /* define a largura */
+    height: 17px; /* define a altura */
+    transform: translate(-50%, -50%); /* aplica movimento, rotação ou escala */
+    border: 4px solid #f5fbff; /* define a borda */
+    border-radius: 50%; /* arredonda os cantos */
+    background: #0b78b8; /* define o fundo */
+    box-shadow: 0 0 0 8px rgba(11,120,184,0.12); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .timeline-invertido .timeline-ponto */
 .timeline-invertido .timeline-ponto {
-    border-color: #eaf6fc;
+    border-color: #eaf6fc; /* define a cor da borda */
 }
 
+/* Estilos aplicados a: .timeline-final */
 .timeline-final {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    isolation: isolate;
-    color: white;
-    background:
-        radial-gradient(circle at 22% 24%, rgba(66, 189, 239, 0.22), transparent 25%),
+    display: grid; /* define o modelo de layout */
+    place-items: center; /* alinha itens nos dois eixos */
+    min-height: 100vh; /* define a altura mínima */
+    isolation: isolate; /* cria um novo contexto de empilhamento */
+    color: white; /* define a cor do texto */
+    background: radial-gradient(circle at 22% 24%, rgba(66, 189, 239, 0.22), transparent 25%),
         radial-gradient(circle at 82% 70%, rgba(24, 123, 173, 0.28), transparent 27%),
-        linear-gradient(135deg, #041721, #092f46 55%, #074f72);
+        linear-gradient(135deg, #041721, #092f46 55%, #074f72); /* define o fundo */
 }
 
+/* Estilos aplicados a: .timeline-final-conteudo */
 .timeline-final-conteudo {
-    position: relative;
-    z-index: 3;
-    width: min(900px, 84%);
-    text-align: center;
+    position: relative; /* define o modo de posicionamento */
+    z-index: 3; /* define a ordem de sobreposição */
+    width: min(900px, 84%); /* define a largura */
+    text-align: center; /* alinha o texto */
 }
 
+/* Estilos aplicados a: .timeline-final .timeline-kicker */
 .timeline-final .timeline-kicker {
-    justify-content: center;
+    justify-content: center; /* alinha itens no eixo principal */
 }
 
+/* Estilos aplicados a: .timeline-final .timeline-kicker::before */
 .timeline-final .timeline-kicker::before {
-    display: none;
+    display: none; /* define o modelo de layout */
 }
 
+/* Estilos aplicados a: .timeline-final h2 */
 .timeline-final h2 {
-    margin-bottom: 22px !important;
-    color: white !important;
-    font-size: clamp(52px, 7vw, 100px) !important;
-    line-height: 0.95;
-    letter-spacing: -0.06em;
+    margin-bottom: 22px !important; /* define o espaço externo abaixo */
+    color: white !important; /* define a cor do texto */
+    font-size: clamp(52px, 7vw, 100px) !important; /* define o tamanho da fonte */
+    line-height: 0.95; /* define o espaçamento entre linhas */
+    letter-spacing: -0.06em; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .timeline-final-conteudo > p:not(.timeline-kicker) */
 .timeline-final-conteudo > p:not(.timeline-kicker) {
-    max-width: 720px;
-    margin: 0 auto 34px !important;
-    color: #d5eaf5 !important;
-    font-size: 19px !important;
+    max-width: 720px; /* define a largura máxima */
+    margin: 0 auto 34px !important; /* define o espaço externo */
+    color: #d5eaf5 !important; /* define a cor do texto */
+    font-size: 19px !important; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .timeline-final-palavras */
 .timeline-final-palavras {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    overflow: hidden;
-    pointer-events: none;
+    position: absolute; /* define o modo de posicionamento */
+    inset: 0; /* define top/right/bottom/left de uma vez */
+    z-index: 0; /* define a ordem de sobreposição */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    pointer-events: none; /* controla cliques e eventos do mouse */
 }
 
+/* Estilos aplicados a: .timeline-final-palavras span */
 .timeline-final-palavras span {
-    position: absolute;
-    color: rgba(255,255,255,0.035);
-    font-size: clamp(95px, 16vw, 280px);
-    line-height: 1;
-    font-weight: 900;
-    letter-spacing: -0.08em;
+    position: absolute; /* define o modo de posicionamento */
+    color: rgba(255,255,255,0.035); /* define a cor do texto */
+    font-size: clamp(95px, 16vw, 280px); /* define o tamanho da fonte */
+    line-height: 1; /* define o espaçamento entre linhas */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: -0.08em; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .timeline-final-palavras span:nth-child(1) */
 .timeline-final-palavras span:nth-child(1) {
-    top: 2%;
-    left: -2%;
+    top: 2%; /* posiciona a partir do topo */
+    left: -2%; /* posiciona a partir da esquerda */
 }
 
+/* Estilos aplicados a: .timeline-final-palavras span:nth-child(2) */
 .timeline-final-palavras span:nth-child(2) {
-    top: 38%;
-    right: -8%;
+    top: 38%; /* posiciona a partir do topo */
+    right: -8%; /* posiciona a partir da direita */
 }
 
+/* Estilos aplicados a: .timeline-final-palavras span:nth-child(3) */
 .timeline-final-palavras span:nth-child(3) {
-    bottom: -4%;
-    left: 12%;
+    bottom: -4%; /* posiciona a partir de baixo */
+    left: 12%; /* posiciona a partir da esquerda */
 }
 
 /* Animações ligadas à rolagem: CSS puro */
+/* Aplica estilos se o navegador suportar o recurso. */
 @supports (animation-timeline: view()) {
+    /* Estilos aplicados a: .timeline-momento .timeline-imagem */
     .timeline-momento .timeline-imagem {
-        opacity: 0;
-        transform: translateX(-55px) scale(0.96);
-        animation: timeline-entrada-imagem linear both;
-        animation-timeline: view();
-        animation-range: entry 12% cover 38%;
+        opacity: 0; /* define a transparência */
+        transform: translateX(-55px) scale(0.96); /* aplica movimento, rotação ou escala */
+        animation: timeline-entrada-imagem linear both; /* aplica uma animação */
+        animation-timeline: view(); /* configura uma parte da animação */
+        animation-range: entry 12% cover 38%; /* configura uma parte da animação */
     }
 
+    /* Estilos aplicados a: .timeline-invertido .timeline-imagem */
     .timeline-invertido .timeline-imagem {
-        transform: translateX(55px) scale(0.96);
+        transform: translateX(55px) scale(0.96); /* aplica movimento, rotação ou escala */
     }
 
+    /* Estilos aplicados a: .timeline-momento .timeline-texto */
     .timeline-momento .timeline-texto {
-        opacity: 0;
-        transform: translateY(46px);
-        animation: timeline-entrada-texto linear both;
-        animation-timeline: view();
-        animation-range: entry 17% cover 43%;
+        opacity: 0; /* define a transparência */
+        transform: translateY(46px); /* aplica movimento, rotação ou escala */
+        animation: timeline-entrada-texto linear both; /* aplica uma animação */
+        animation-timeline: view(); /* configura uma parte da animação */
+        animation-range: entry 17% cover 43%; /* configura uma parte da animação */
     }
 
+    /* Estilos aplicados a: .timeline-momento .timeline-ano */
     .timeline-momento .timeline-ano {
-        opacity: 0;
-        transform: translateY(70px);
-        animation: timeline-entrada-ano linear both;
-        animation-timeline: view();
-        animation-range: entry 0% cover 48%;
+        opacity: 0; /* define a transparência */
+        transform: translateY(70px); /* aplica movimento, rotação ou escala */
+        animation: timeline-entrada-ano linear both; /* aplica uma animação */
+        animation-timeline: view(); /* configura uma parte da animação */
+        animation-range: entry 0% cover 48%; /* configura uma parte da animação */
     }
+
 }
 
+/* Define as etapas desta animação. */
 @keyframes timeline-entrada-imagem {
+    /* Estilos aplicados a: to */
     to {
-        opacity: 1;
-        transform: translateX(0) scale(1);
+        opacity: 1; /* define a transparência */
+        transform: translateX(0) scale(1); /* aplica movimento, rotação ou escala */
     }
+
 }
 
+/* Define as etapas desta animação. */
 @keyframes timeline-entrada-texto {
+    /* Estilos aplicados a: to */
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* define a transparência */
+        transform: translateY(0); /* aplica movimento, rotação ou escala */
     }
+
 }
 
+/* Define as etapas desta animação. */
 @keyframes timeline-entrada-ano {
+    /* Estilos aplicados a: to */
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* define a transparência */
+        transform: translateY(0); /* aplica movimento, rotação ou escala */
     }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 980px) {
+    /* Estilos aplicados a: .timeline-grid, .timeline-invertido .timeline-grid */
     .timeline-grid,
     .timeline-invertido .timeline-grid {
-        width: min(860px, 86%);
-        min-height: auto;
-        grid-template-columns: 1fr;
-        gap: 45px;
-        padding: 90px 0;
+        width: min(860px, 86%); /* define a largura */
+        min-height: auto; /* define a altura mínima */
+        grid-template-columns: 1fr; /* define as colunas da grade */
+        gap: 45px; /* define o espaço entre itens */
+        padding: 90px 0; /* define o espaço interno */
     }
 
+    /* Estilos aplicados a: .timeline-invertido .timeline-imagem, .timeline-invertido .timeline-texto */
     .timeline-invertido .timeline-imagem,
     .timeline-invertido .timeline-texto {
-        grid-column: 1;
-        grid-row: auto;
+        grid-column: 1; /* define onde o item ocupa colunas */
+        grid-row: auto; /* define onde o item ocupa linhas */
     }
 
+    /* Estilos aplicados a: .timeline-imagem */
     .timeline-imagem {
-        width: min(520px, 100%);
-        height: 58vh;
-        min-height: 450px;
+        width: min(520px, 100%); /* define a largura */
+        height: 58vh; /* define a altura */
+        min-height: 450px; /* define a altura mínima */
     }
 
+    /* Estilos aplicados a: .timeline-invertido .timeline-imagem */
     .timeline-invertido .timeline-imagem {
-        justify-self: end;
+        justify-self: end; /* configura esta característica visual */
     }
 
+    /* Estilos aplicados a: .timeline-eixo */
     .timeline-eixo {
-        left: 6%;
+        left: 6%; /* posiciona a partir da esquerda */
     }
 
+    /* Estilos aplicados a: .timeline-ano, .timeline-invertido .timeline-ano */
     .timeline-ano,
     .timeline-invertido .timeline-ano {
-        left: auto;
-        right: -0.08em;
-        font-size: clamp(150px, 35vw, 320px);
+        left: auto; /* posiciona a partir da esquerda */
+        right: -0.08em; /* posiciona a partir da direita */
+        font-size: clamp(150px, 35vw, 320px); /* define o tamanho da fonte */
     }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 750px) {
+    /* Estilos aplicados a: .timeline-cena */
     .timeline-cena {
-        scroll-margin-top: 150px;
+        scroll-margin-top: 150px; /* configura o comportamento da rolagem */
     }
 
+    /* Estilos aplicados a: .timeline-abertura */
     .timeline-abertura {
-        min-height: calc(100vh - 145px);
+        min-height: calc(100vh - 145px); /* define a altura mínima */
     }
 
+    /* Estilos aplicados a: .timeline-abertura-conteudo, .timeline-final-conteudo */
     .timeline-abertura-conteudo,
     .timeline-final-conteudo {
-        width: 88%;
+        width: 88%; /* define a largura */
     }
 
+    /* Estilos aplicados a: .timeline-abertura h1 */
     .timeline-abertura h1 {
-        font-size: clamp(45px, 15vw, 72px);
+        font-size: clamp(45px, 15vw, 72px); /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .timeline-abertura-anos */
     .timeline-abertura-anos {
-        display: none;
+        display: none; /* define o modelo de layout */
     }
 
+    /* Estilos aplicados a: .timeline-grid, .timeline-invertido .timeline-grid */
     .timeline-grid,
     .timeline-invertido .timeline-grid {
-        width: 82%;
-        padding: 75px 0;
-        gap: 34px;
+        width: 82%; /* define a largura */
+        padding: 75px 0; /* define o espaço interno */
+        gap: 34px; /* define o espaço entre itens */
     }
 
+    /* Estilos aplicados a: .timeline-imagem, .timeline-invertido .timeline-imagem */
     .timeline-imagem,
     .timeline-invertido .timeline-imagem {
-        width: 100%;
-        height: 54vh;
-        min-height: 390px;
+        width: 100%; /* define a largura */
+        height: 54vh; /* define a altura */
+        min-height: 390px; /* define a altura mínima */
     }
 
+    /* Estilos aplicados a: .timeline-imagem::before */
     .timeline-imagem::before {
-        inset: 15px -12px -15px 12px;
+        inset: 15px -12px -15px 12px; /* define top/right/bottom/left de uma vez */
     }
 
+    /* Estilos aplicados a: .timeline-numero */
     .timeline-numero {
-        left: -10px;
+        left: -10px; /* posiciona a partir da esquerda */
     }
 
+    /* Estilos aplicados a: .timeline-texto h2 */
     .timeline-texto h2 {
-        font-size: clamp(42px, 13vw, 64px) !important;
+        font-size: clamp(42px, 13vw, 64px) !important; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .timeline-texto h3 */
     .timeline-texto h3 {
-        font-size: 21px;
+        font-size: 21px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .timeline-eixo */
     .timeline-eixo {
-        left: 3.5%;
+        left: 3.5%; /* posiciona a partir da esquerda */
     }
 
+    /* Estilos aplicados a: .timeline-ponto */
     .timeline-ponto {
-        width: 14px;
-        height: 14px;
+        width: 14px; /* define a largura */
+        height: 14px; /* define a altura */
     }
 
+    /* Estilos aplicados a: .timeline-final h2 */
     .timeline-final h2 {
-        font-size: clamp(48px, 14vw, 72px) !important;
+        font-size: clamp(48px, 14vw, 72px) !important; /* define o tamanho da fonte */
     }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (prefers-reduced-motion: reduce) {
+    /* Estilos aplicados a: .timeline-descer strong */
     .timeline-descer strong {
-        animation: none;
+        animation: none; /* aplica uma animação */
     }
+
 }
-
-
 
 /* =========================
    NAVEGAÇÃO POR ÁREAS
    SEM JAVASCRIPT
 ========================= */
-
+/* Estilos aplicados a: .areas-cientificas */
 .areas-cientificas {
-    background:
-        linear-gradient(180deg, #f8fcff 0%, #eef8ff 100%);
-    padding: 38px 8% 48px;
-    border-top: 1px solid #d7eaf5;
-    border-bottom: 1px solid #d7eaf5;
+    background: linear-gradient(180deg, #f8fcff 0%, #eef8ff 100%); /* define o fundo */
+    padding: 38px 8% 48px; /* define o espaço interno */
+    border-top: 1px solid #d7eaf5; /* define a borda superior */
+    border-bottom: 1px solid #d7eaf5; /* define a borda inferior */
 }
 
+/* Estilos aplicados a: .areas-links */
 .areas-links {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(145px, 1fr));
-    gap: 14px;
+    max-width: 1180px; /* define a largura máxima */
+    margin: 0 auto; /* define o espaço externo */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: repeat(5, minmax(145px, 1fr)); /* define as colunas da grade */
+    gap: 14px; /* define o espaço entre itens */
 }
 
+/* Estilos aplicados a: .botao-area */
 .botao-area {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 64px;
-    padding: 14px 18px;
-    overflow: hidden;
-
-    border: 1px solid #c9e1ef;
-    border-radius: 14px;
-
-    background: #ffffff;
-    color: #0a537c;
-
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.2px;
-    text-align: center;
-    text-decoration: none;
-
-    box-shadow: 0 5px 16px rgba(19, 73, 105, 0.08);
-
-    transition:
-        transform 0.22s ease,
+    position: relative; /* define o modo de posicionamento */
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    justify-content: center; /* alinha itens no eixo principal */
+    min-height: 64px; /* define a altura mínima */
+    padding: 14px 18px; /* define o espaço interno */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    border: 1px solid #c9e1ef; /* define a borda */
+    border-radius: 14px; /* arredonda os cantos */
+    background: #ffffff; /* define o fundo */
+    color: #0a537c; /* define a cor do texto */
+    font-size: 15px; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
+    letter-spacing: 0.2px; /* define o espaço entre letras */
+    text-align: center; /* alinha o texto */
+    text-decoration: none; /* define decoração do texto */
+    box-shadow: 0 5px 16px rgba(19, 73, 105, 0.08); /* cria sombra ao redor do elemento */
+    transition: transform 0.22s ease,
         box-shadow 0.22s ease,
         background 0.22s ease,
         color 0.22s ease,
-        border-color 0.22s ease;
+        border-color 0.22s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .botao-area::before */
 .botao-area::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background: #0b78b8;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.22s ease;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    left: 0; /* posiciona a partir da esquerda */
+    bottom: 0; /* posiciona a partir de baixo */
+    width: 100%; /* define a largura */
+    height: 4px; /* define a altura */
+    background: #0b78b8; /* define o fundo */
+    transform: scaleX(0); /* aplica movimento, rotação ou escala */
+    transform-origin: left; /* define o ponto de origem da transformação */
+    transition: transform 0.22s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .botao-area:hover */
 .botao-area:hover {
-    transform: translateY(-4px);
-    border-color: #7fc3e6;
-    background: #f8fdff;
-    color: #07517a;
-    box-shadow: 0 10px 24px rgba(19, 73, 105, 0.16);
+    transform: translateY(-4px); /* aplica movimento, rotação ou escala */
+    border-color: #7fc3e6; /* define a cor da borda */
+    background: #f8fdff; /* define o fundo */
+    color: #07517a; /* define a cor do texto */
+    box-shadow: 0 10px 24px rgba(19, 73, 105, 0.16); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .botao-area:hover::before */
 .botao-area:hover::before {
-    transform: scaleX(1);
+    transform: scaleX(1); /* aplica movimento, rotação ou escala */
 }
 
+/* Estilos aplicados a: .botao-area.ativo */
 .botao-area.ativo {
-    color: #ffffff;
-    border-color: #0b78b8;
-    background: linear-gradient(135deg, #0b78b8 0%, #07517a 100%);
-    box-shadow: 0 10px 24px rgba(11, 120, 184, 0.25);
-    transform: translateY(-2px);
+    color: #ffffff; /* define a cor do texto */
+    border-color: #0b78b8; /* define a cor da borda */
+    background: linear-gradient(135deg, #0b78b8 0%, #07517a 100%); /* define o fundo */
+    box-shadow: 0 10px 24px rgba(11, 120, 184, 0.25); /* cria sombra ao redor do elemento */
+    transform: translateY(-2px); /* aplica movimento, rotação ou escala */
 }
 
+/* Estilos aplicados a: .botao-area.ativo::before */
 .botao-area.ativo::before {
-    transform: scaleX(1);
-    background: #87d4ff;
+    transform: scaleX(1); /* aplica movimento, rotação ou escala */
+    background: #87d4ff; /* define o fundo */
 }
 
+/* Estilos aplicados a: .voltar-area */
 .voltar-area {
-    background: #f4faff;
-    padding: 34px 8% 6px;
+    background: #f4faff; /* define o fundo */
+    padding: 34px 8% 6px; /* define o espaço interno */
 }
 
+/* Estilos aplicados a: .botao-voltar */
 .botao-voltar {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-height: 52px;
-    padding: 12px 22px;
-
-    border: 2px solid #0b78b8;
-    border-radius: 12px;
-
-    background: linear-gradient(135deg, #0b78b8 0%, #07517a 100%);
-    color: #ffffff;
-
-    font-size: 15px;
-    font-weight: 800;
-    text-decoration: none;
-
-    box-shadow: 0 7px 18px rgba(11, 120, 184, 0.22);
-
-    transition:
-        transform 0.22s ease,
+    display: inline-flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    justify-content: center; /* alinha itens no eixo principal */
+    gap: 10px; /* define o espaço entre itens */
+    min-height: 52px; /* define a altura mínima */
+    padding: 12px 22px; /* define o espaço interno */
+    border: 2px solid #0b78b8; /* define a borda */
+    border-radius: 12px; /* arredonda os cantos */
+    background: linear-gradient(135deg, #0b78b8 0%, #07517a 100%); /* define o fundo */
+    color: #ffffff; /* define a cor do texto */
+    font-size: 15px; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
+    text-decoration: none; /* define decoração do texto */
+    box-shadow: 0 7px 18px rgba(11, 120, 184, 0.22); /* cria sombra ao redor do elemento */
+    transition: transform 0.22s ease,
         box-shadow 0.22s ease,
-        background 0.22s ease;
+        background 0.22s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .botao-voltar:hover */
 .botao-voltar:hover {
-    transform: translateX(-5px);
-    background: linear-gradient(135deg, #086ca7 0%, #063f60 100%);
-    box-shadow: 0 10px 24px rgba(11, 120, 184, 0.30);
+    transform: translateX(-5px); /* aplica movimento, rotação ou escala */
+    background: linear-gradient(135deg, #086ca7 0%, #063f60 100%); /* define o fundo */
+    box-shadow: 0 10px 24px rgba(11, 120, 184, 0.30); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .botao-voltar:focus-visible, .botao-area:focus-visible */
 .botao-voltar:focus-visible,
 .botao-area:focus-visible {
-    outline: 3px solid rgba(11, 120, 184, 0.28);
-    outline-offset: 4px;
+    outline: 3px solid rgba(11, 120, 184, 0.28); /* define o contorno de foco */
+    outline-offset: 4px; /* afasta o contorno do elemento */
 }
 
+/* Estilos aplicados a: .area-lista */
 .area-lista {
-    padding-top: 38px;
-    min-height: 55vh;
+    padding-top: 38px; /* define o espaço interno acima */
+    min-height: 55vh; /* define a altura mínima */
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 1050px) {
+    /* Estilos aplicados a: .areas-links */
     .areas-links {
-        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        grid-template-columns: repeat(3, minmax(150px, 1fr)); /* define as colunas da grade */
     }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 750px) {
+    /* Estilos aplicados a: .areas-cientificas */
     .areas-cientificas {
-        padding: 28px 5% 36px;
+        padding: 28px 5% 36px; /* define o espaço interno */
     }
 
+    /* Estilos aplicados a: .areas-links */
     .areas-links {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* define as colunas da grade */
+        gap: 10px; /* define o espaço entre itens */
     }
 
+    /* Estilos aplicados a: .botao-area */
     .botao-area {
-        min-height: 56px;
-        padding: 12px 10px;
-        font-size: 14px;
+        min-height: 56px; /* define a altura mínima */
+        padding: 12px 10px; /* define o espaço interno */
+        font-size: 14px; /* define o tamanho da fonte */
     }
 
+    /* Estilos aplicados a: .voltar-area */
     .voltar-area {
-        padding: 26px 5% 4px;
+        padding: 26px 5% 4px; /* define o espaço interno */
     }
 
+    /* Estilos aplicados a: .botao-voltar */
     .botao-voltar {
-        width: 100%;
+        width: 100%; /* define a largura */
     }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 420px) {
+    /* Estilos aplicados a: .areas-links */
     .areas-links {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* define as colunas da grade */
     }
+
 }
-
-
 
 /* =========================
    PERFIS INDIVIDUAIS
    100% HTML + CSS
 ========================= */
-.perfil-pagina { background: #f7fbff; }
+/* Estilos aplicados a: .perfil-pagina */
+.perfil-pagina {
+    background: #f7fbff; /* define o fundo */
+}
 
+/* Estilos aplicados a: .perfil-hero */
 .perfil-hero {
-    min-height: 620px;
-    padding: 70px 8% 76px;
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
-    align-items: center;
-    gap: 64px;
-    background:
-        radial-gradient(circle at 82% 30%, rgba(79, 177, 229, .18), transparent 30%),
-        linear-gradient(135deg, #f8fcff 0%, #eaf6fd 100%);
-    border-bottom: 1px solid #d8e8f3;
-    overflow: hidden;
+    min-height: 620px; /* define a altura mínima */
+    padding: 70px 8% 76px; /* define o espaço interno */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); /* define as colunas da grade */
+    align-items: center; /* alinha itens no eixo secundário */
+    gap: 64px; /* define o espaço entre itens */
+    background: radial-gradient(circle at 82% 30%, rgba(79, 177, 229, .18), transparent 30%),
+        linear-gradient(135deg, #f8fcff 0%, #eaf6fd 100%); /* define o fundo */
+    border-bottom: 1px solid #d8e8f3; /* define a borda inferior */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
 }
 
-.perfil-hero-conteudo { max-width: 720px; }
+/* Estilos aplicados a: .perfil-hero-conteudo */
+.perfil-hero-conteudo {
+    max-width: 720px; /* define a largura máxima */
+}
+
+/* Estilos aplicados a: .perfil-voltar */
 .perfil-voltar {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 34px;
-    color: #0b6fa9;
-    font-size: 14px;
-    font-weight: 800;
-    text-decoration: none;
-    transition: transform .2s ease, color .2s ease;
+    display: inline-flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    margin-bottom: 34px; /* define o espaço externo abaixo */
+    color: #0b6fa9; /* define a cor do texto */
+    font-size: 14px; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
+    text-decoration: none; /* define decoração do texto */
+    transition: transform .2s ease, color .2s ease; /* suaviza mudanças de estilo */
 }
-.perfil-voltar:hover { transform: translateX(-4px); color: #06476d; }
+
+/* Estilos aplicados a: .perfil-voltar:hover */
+.perfil-voltar:hover {
+    transform: translateX(-4px); /* aplica movimento, rotação ou escala */
+    color: #06476d; /* define a cor do texto */
+}
+
+/* Estilos aplicados a: .perfil-etiqueta */
 .perfil-etiqueta {
-    margin-bottom: 10px;
-    color: #0b78b8;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 2.1px;
+    margin-bottom: 10px; /* define o espaço externo abaixo */
+    color: #0b78b8; /* define a cor do texto */
+    font-size: 12px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: 2.1px; /* define o espaço entre letras */
 }
+
+/* Estilos aplicados a: .perfil-hero h1 */
 .perfil-hero h1 {
-    margin: 0;
-    color: #073f62;
-    font-size: clamp(42px, 6vw, 76px);
-    line-height: .98;
-    letter-spacing: -2.5px;
+    margin: 0; /* define o espaço externo */
+    color: #073f62; /* define a cor do texto */
+    font-size: clamp(42px, 6vw, 76px); /* define o tamanho da fonte */
+    line-height: .98; /* define o espaçamento entre linhas */
+    letter-spacing: -2.5px; /* define o espaço entre letras */
 }
+
+/* Estilos aplicados a: .perfil-area */
 .perfil-area {
-    margin-top: 18px;
-    color: #0b78b8;
-    font-size: 17px;
-    font-weight: 800;
+    margin-top: 18px; /* define o espaço externo acima */
+    color: #0b78b8; /* define a cor do texto */
+    font-size: 17px; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
 }
+
+/* Estilos aplicados a: .perfil-frase */
 .perfil-frase {
-    max-width: 660px;
-    margin-top: 24px;
-    color: #36566d;
-    font-size: 20px;
-    line-height: 1.65;
+    max-width: 660px; /* define a largura máxima */
+    margin-top: 24px; /* define o espaço externo acima */
+    color: #36566d; /* define a cor do texto */
+    font-size: 20px; /* define o tamanho da fonte */
+    line-height: 1.65; /* define o espaçamento entre linhas */
 }
+
+/* Estilos aplicados a: .perfil-dados */
 .perfil-dados {
-    margin-top: 34px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    margin-top: 34px; /* define o espaço externo acima */
+    display: flex; /* define o modelo de layout */
+    flex-wrap: wrap; /* permite quebrar itens em linhas */
+    gap: 12px; /* define o espaço entre itens */
 }
+
+/* Estilos aplicados a: .perfil-dados > div */
 .perfil-dados > div {
-    min-width: 180px;
-    padding: 13px 17px;
-    background: rgba(255,255,255,.74);
-    border: 1px solid #cfe3f0;
-    border-radius: 12px;
+    min-width: 180px; /* define a largura mínima */
+    padding: 13px 17px; /* define o espaço interno */
+    background: rgba(255,255,255,.74); /* define o fundo */
+    border: 1px solid #cfe3f0; /* define a borda */
+    border-radius: 12px; /* arredonda os cantos */
 }
+
+/* Estilos aplicados a: .perfil-dados span */
 .perfil-dados span {
-    display: block;
-    margin-bottom: 2px;
-    color: #7892a5;
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
+    display: block; /* define o modelo de layout */
+    margin-bottom: 2px; /* define o espaço externo abaixo */
+    color: #7892a5; /* define a cor do texto */
+    font-size: 10px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: 1.2px; /* define o espaço entre letras */
+    text-transform: uppercase; /* transforma maiúsculas/minúsculas */
 }
-.perfil-dados strong { color: #173f59; font-size: 14px; }
 
+/* Estilos aplicados a: .perfil-dados strong */
+.perfil-dados strong {
+    color: #173f59; /* define a cor do texto */
+    font-size: 14px; /* define o tamanho da fonte */
+}
+
+/* Estilos aplicados a: .perfil-foto-wrap */
 .perfil-foto-wrap {
-    position: relative;
-    max-width: 430px;
-    justify-self: center;
-}
-.perfil-foto-wrap::before {
-    content: "";
-    position: absolute;
-    inset: 22px -22px -22px 22px;
-    border: 2px solid #7ec7ed;
-    border-radius: 26px;
-}
-.perfil-foto {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 26px;
-    box-shadow: 0 24px 52px rgba(6, 67, 102, .18);
+    position: relative; /* define o modo de posicionamento */
+    max-width: 430px; /* define a largura máxima */
+    justify-self: center; /* configura esta característica visual */
 }
 
+/* Estilos aplicados a: .perfil-foto-wrap::before */
+.perfil-foto-wrap::before {
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    inset: 22px -22px -22px 22px; /* define top/right/bottom/left de uma vez */
+    border: 2px solid #7ec7ed; /* define a borda */
+    border-radius: 26px; /* arredonda os cantos */
+}
+
+/* Estilos aplicados a: .perfil-foto */
+.perfil-foto {
+    position: relative; /* define o modo de posicionamento */
+    z-index: 1; /* define a ordem de sobreposição */
+    display: block; /* define o modelo de layout */
+    width: 100%; /* define a largura */
+    aspect-ratio: 4 / 5; /* define a proporção largura/altura */
+    object-fit: cover; /* define como a imagem ocupa seu espaço */
+    object-position: center top; /* define a posição da imagem dentro do espaço */
+    border-radius: 26px; /* arredonda os cantos */
+    box-shadow: 0 24px 52px rgba(6, 67, 102, .18); /* cria sombra ao redor do elemento */
+}
+
+/* Estilos aplicados a: .perfil-resumo, .perfil-trajetoria, .perfil-importancia */
 .perfil-resumo,
 .perfil-trajetoria,
 .perfil-importancia {
-    padding: 78px 8%;
+    padding: 78px 8%; /* define o espaço interno */
 }
-.perfil-resumo { background: #fff; }
-.perfil-trajetoria { background: #eef7fc; }
-.perfil-importancia { background: #fff; }
 
+/* Estilos aplicados a: .perfil-resumo */
+.perfil-resumo {
+    background: #fff; /* define o fundo */
+}
+
+/* Estilos aplicados a: .perfil-trajetoria */
+.perfil-trajetoria {
+    background: #eef7fc; /* define o fundo */
+}
+
+/* Estilos aplicados a: .perfil-importancia */
+.perfil-importancia {
+    background: #fff; /* define o fundo */
+}
+
+/* Estilos aplicados a: .perfil-titulo-secao */
 .perfil-titulo-secao {
-    max-width: 1100px;
-    margin: 0 auto 38px;
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
+    max-width: 1100px; /* define a largura máxima */
+    margin: 0 auto 38px; /* define o espaço externo */
+    display: flex; /* define o modelo de layout */
+    align-items: flex-start; /* alinha itens no eixo secundário */
+    gap: 18px; /* define o espaço entre itens */
 }
+
+/* Estilos aplicados a: .perfil-titulo-secao > span */
 .perfil-titulo-secao > span {
-    color: #99b4c6;
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    padding-top: 8px;
+    color: #99b4c6; /* define a cor do texto */
+    font-size: 13px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: 1px; /* define o espaço entre letras */
+    padding-top: 8px; /* define o espaço interno acima */
 }
+
+/* Estilos aplicados a: .perfil-titulo-secao p */
 .perfil-titulo-secao p {
-    margin: 0 0 3px;
-    color: #0b78b8;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 1.8px;
+    margin: 0 0 3px; /* define o espaço externo */
+    color: #0b78b8; /* define a cor do texto */
+    font-size: 11px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: 1.8px; /* define o espaço entre letras */
 }
+
+/* Estilos aplicados a: .perfil-titulo-secao h2 */
 .perfil-titulo-secao h2 {
-    margin: 0;
-    color: #0a3d62;
-    font-size: clamp(28px, 4vw, 42px);
+    margin: 0; /* define o espaço externo */
+    color: #0a3d62; /* define a cor do texto */
+    font-size: clamp(28px, 4vw, 42px); /* define o tamanho da fonte */
 }
+
+/* Estilos aplicados a: .perfil-texto-principal */
 .perfil-texto-principal {
-    max-width: 940px;
-    margin: 0 auto;
-    padding-left: 38px;
-    color: #36566d;
-    font-size: 20px;
-    line-height: 1.8;
-    border-left: 4px solid #0b78b8;
+    max-width: 940px; /* define a largura máxima */
+    margin: 0 auto; /* define o espaço externo */
+    padding-left: 38px; /* define o espaço interno à esquerda */
+    color: #36566d; /* define a cor do texto */
+    font-size: 20px; /* define o tamanho da fonte */
+    line-height: 1.8; /* define o espaçamento entre linhas */
+    border-left: 4px solid #0b78b8; /* define a borda esquerda */
 }
 
+/* Estilos aplicados a: .perfil-linha */
 .perfil-linha {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 8px 0;
+    position: relative; /* define o modo de posicionamento */
+    max-width: 1000px; /* define a largura máxima */
+    margin: 0 auto; /* define o espaço externo */
+    padding: 8px 0; /* define o espaço interno */
 }
+
+/* Estilos aplicados a: .perfil-linha::before */
 .perfil-linha::before {
-    content: "";
-    position: absolute;
-    left: 112px;
-    top: 10px;
-    bottom: 10px;
-    width: 3px;
-    background: linear-gradient(#0b78b8, #8fd4f5);
-    border-radius: 6px;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    left: 112px; /* posiciona a partir da esquerda */
+    top: 10px; /* posiciona a partir do topo */
+    bottom: 10px; /* posiciona a partir de baixo */
+    width: 3px; /* define a largura */
+    background: linear-gradient(#0b78b8, #8fd4f5); /* define o fundo */
+    border-radius: 6px; /* arredonda os cantos */
 }
+
+/* Estilos aplicados a: .perfil-evento */
 .perfil-evento {
-    position: relative;
-    display: grid;
-    grid-template-columns: 90px minmax(0, 1fr);
-    gap: 52px;
-    align-items: center;
-    margin: 0 0 18px;
+    position: relative; /* define o modo de posicionamento */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: 90px minmax(0, 1fr); /* define as colunas da grade */
+    gap: 52px; /* define o espaço entre itens */
+    align-items: center; /* alinha itens no eixo secundário */
+    margin: 0 0 18px; /* define o espaço externo */
 }
-.perfil-evento:last-child { margin-bottom: 0; }
+
+/* Estilos aplicados a: .perfil-evento:last-child */
+.perfil-evento:last-child {
+    margin-bottom: 0; /* define o espaço externo abaixo */
+}
+
+/* Estilos aplicados a: .perfil-evento::before */
 .perfil-evento::before {
-    content: "";
-    position: absolute;
-    left: 103px;
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    background: #fff;
-    border: 5px solid #0b78b8;
-    box-shadow: 0 0 0 5px rgba(11,120,184,.10);
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    left: 103px; /* posiciona a partir da esquerda */
+    width: 21px; /* define a largura */
+    height: 21px; /* define a altura */
+    border-radius: 50%; /* arredonda os cantos */
+    background: #fff; /* define o fundo */
+    border: 5px solid #0b78b8; /* define a borda */
+    box-shadow: 0 0 0 5px rgba(11,120,184,.10); /* cria sombra ao redor do elemento */
 }
+
+/* Estilos aplicados a: .perfil-ano */
 .perfil-ano {
-    text-align: right;
-    color: #0a527f;
-    font-size: 18px;
-    font-weight: 900;
+    text-align: right; /* alinha o texto */
+    color: #0a527f; /* define a cor do texto */
+    font-size: 18px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
 }
+
+/* Estilos aplicados a: .perfil-evento-conteudo */
 .perfil-evento-conteudo {
-    margin-left: 8px;
-    padding: 18px 22px;
-    background: #fff;
-    border: 1px solid #d6e8f2;
-    border-radius: 14px;
-    box-shadow: 0 5px 16px rgba(12, 75, 109, .06);
+    margin-left: 8px; /* define o espaço externo à esquerda */
+    padding: 18px 22px; /* define o espaço interno */
+    background: #fff; /* define o fundo */
+    border: 1px solid #d6e8f2; /* define a borda */
+    border-radius: 14px; /* arredonda os cantos */
+    box-shadow: 0 5px 16px rgba(12, 75, 109, .06); /* cria sombra ao redor do elemento */
 }
+
+/* Estilos aplicados a: .perfil-evento-conteudo p */
 .perfil-evento-conteudo p {
-    margin: 0;
-    color: #3d5d72;
-    line-height: 1.65;
+    margin: 0; /* define o espaço externo */
+    color: #3d5d72; /* define a cor do texto */
+    line-height: 1.65; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .perfil-impacto-grid */
 .perfil-impacto-grid {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+    max-width: 1000px; /* define a largura máxima */
+    margin: 0 auto; /* define o espaço externo */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* define as colunas da grade */
+    gap: 20px; /* define o espaço entre itens */
 }
+
+/* Estilos aplicados a: .perfil-impacto */
 .perfil-impacto {
-    padding: 28px;
-    border: 1px solid #d5e6f0;
-    border-radius: 18px;
-    background: #f8fcff;
+    padding: 28px; /* define o espaço interno */
+    border: 1px solid #d5e6f0; /* define a borda */
+    border-radius: 18px; /* arredonda os cantos */
+    background: #f8fcff; /* define o fundo */
 }
+
+/* Estilos aplicados a: .perfil-impacto-destaque */
 .perfil-impacto-destaque {
-    background: linear-gradient(135deg, #0a527f, #0b78b8);
-    border-color: transparent;
+    background: linear-gradient(135deg, #0a527f, #0b78b8); /* define o fundo */
+    border-color: transparent; /* define a cor da borda */
 }
+
+/* Estilos aplicados a: .perfil-impacto-icone */
 .perfil-impacto-icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    margin-bottom: 18px;
-    border-radius: 12px;
-    background: #dff3ff;
-    color: #0a527f;
-    font-weight: 900;
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    justify-content: center; /* alinha itens no eixo principal */
+    width: 42px; /* define a largura */
+    height: 42px; /* define a altura */
+    margin-bottom: 18px; /* define o espaço externo abaixo */
+    border-radius: 12px; /* arredonda os cantos */
+    background: #dff3ff; /* define o fundo */
+    color: #0a527f; /* define a cor do texto */
+    font-weight: 900; /* define a espessura da fonte */
 }
-.perfil-impacto h3 { margin: 0 0 9px; color: #0a3d62; font-size: 20px; }
-.perfil-impacto p { margin: 0; color: #45657a; line-height: 1.7; }
-.perfil-impacto-destaque .perfil-impacto-icone { background: rgba(255,255,255,.16); color: #fff; }
+
+/* Estilos aplicados a: .perfil-impacto h3 */
+.perfil-impacto h3 {
+    margin: 0 0 9px; /* define o espaço externo */
+    color: #0a3d62; /* define a cor do texto */
+    font-size: 20px; /* define o tamanho da fonte */
+}
+
+/* Estilos aplicados a: .perfil-impacto p */
+.perfil-impacto p {
+    margin: 0; /* define o espaço externo */
+    color: #45657a; /* define a cor do texto */
+    line-height: 1.7; /* define o espaçamento entre linhas */
+}
+
+/* Estilos aplicados a: .perfil-impacto-destaque .perfil-impacto-icone */
+.perfil-impacto-destaque .perfil-impacto-icone {
+    background: rgba(255,255,255,.16); /* define o fundo */
+    color: #fff; /* define a cor do texto */
+}
+
+/* Estilos aplicados a: .perfil-impacto-destaque h3, .perfil-impacto-destaque p */
 .perfil-impacto-destaque h3,
-.perfil-impacto-destaque p { color: #fff; }
+.perfil-impacto-destaque p {
+    color: #fff; /* define a cor do texto */
+}
+
+/* Estilos aplicados a: .perfil-fonte */
 .perfil-fonte {
-    max-width: 1000px;
-    margin: 22px auto 0;
-    color: #7890a0;
-    font-size: 12px;
+    max-width: 1000px; /* define a largura máxima */
+    margin: 22px auto 0; /* define o espaço externo */
+    color: #7890a0; /* define a cor do texto */
+    font-size: 12px; /* define o tamanho da fonte */
 }
+
+/* Estilos aplicados a: .perfil-acoes */
 .perfil-acoes {
-    max-width: 1000px;
-    margin: 30px auto 0;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    flex-wrap: wrap;
+    max-width: 1000px; /* define a largura máxima */
+    margin: 30px auto 0; /* define o espaço externo */
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    gap: 14px; /* define o espaço entre itens */
+    flex-wrap: wrap; /* permite quebrar itens em linhas */
 }
+
+/* Estilos aplicados a: .perfil-link-timeline */
 .perfil-link-timeline {
-    display: inline-flex;
-    align-items: center;
-    min-height: 52px;
-    padding: 12px 20px;
-    color: #0b6fa9;
-    font-weight: 800;
-    text-decoration: none;
-    border: 2px solid #b7d9eb;
-    border-radius: 12px;
-    background: #fff;
-    transition: transform .2s ease, border-color .2s ease;
+    display: inline-flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    min-height: 52px; /* define a altura mínima */
+    padding: 12px 20px; /* define o espaço interno */
+    color: #0b6fa9; /* define a cor do texto */
+    font-weight: 800; /* define a espessura da fonte */
+    text-decoration: none; /* define decoração do texto */
+    border: 2px solid #b7d9eb; /* define a borda */
+    border-radius: 12px; /* arredonda os cantos */
+    background: #fff; /* define o fundo */
+    transition: transform .2s ease, border-color .2s ease; /* suaviza mudanças de estilo */
 }
-.perfil-link-timeline:hover { transform: translateX(4px); border-color: #0b78b8; }
 
+/* Estilos aplicados a: .perfil-link-timeline:hover */
+.perfil-link-timeline:hover {
+    transform: translateX(4px); /* aplica movimento, rotação ou escala */
+    border-color: #0b78b8; /* define a cor da borda */
+}
+
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 900px) {
-    .perfil-hero { grid-template-columns: 1fr; gap: 42px; padding-top: 52px; }
-    .perfil-foto-wrap { width: min(100%, 390px); justify-self: start; }
-    .perfil-impacto-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 650px) {
-    .perfil-hero, .perfil-resumo, .perfil-trajetoria, .perfil-importancia { padding-left: 5%; padding-right: 5%; }
-    .perfil-hero h1 { letter-spacing: -1.3px; }
-    .perfil-frase, .perfil-texto-principal { font-size: 17px; }
-    .perfil-texto-principal { padding-left: 20px; }
-    .perfil-linha::before { left: 12px; }
-    .perfil-evento { grid-template-columns: 1fr; gap: 8px; padding-left: 38px; }
-    .perfil-evento::before { left: 3px; top: 18px; }
-    .perfil-ano { text-align: left; font-size: 16px; }
-    .perfil-evento-conteudo { margin-left: 0; }
-    .perfil-foto-wrap::before { inset: 14px -12px -14px 12px; }
+    /* Estilos aplicados a: .perfil-hero */
+    .perfil-hero {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+        gap: 42px; /* define o espaço entre itens */
+        padding-top: 52px; /* define o espaço interno acima */
+    }
+
+    /* Estilos aplicados a: .perfil-foto-wrap */
+    .perfil-foto-wrap {
+        width: min(100%, 390px); /* define a largura */
+        justify-self: start; /* configura esta característica visual */
+    }
+
+    /* Estilos aplicados a: .perfil-impacto-grid */
+    .perfil-impacto-grid {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+    }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
+@media (max-width: 650px) {
+    /* Estilos aplicados a: .perfil-hero, .perfil-resumo, .perfil-trajetoria, .perfil-importancia */
+    .perfil-hero, .perfil-resumo, .perfil-trajetoria, .perfil-importancia {
+        padding-left: 5%; /* define o espaço interno à esquerda */
+        padding-right: 5%; /* define o espaço interno à direita */
+    }
+
+    /* Estilos aplicados a: .perfil-hero h1 */
+    .perfil-hero h1 {
+        letter-spacing: -1.3px; /* define o espaço entre letras */
+    }
+
+    /* Estilos aplicados a: .perfil-frase, .perfil-texto-principal */
+    .perfil-frase, .perfil-texto-principal {
+        font-size: 17px; /* define o tamanho da fonte */
+    }
+
+    /* Estilos aplicados a: .perfil-texto-principal */
+    .perfil-texto-principal {
+        padding-left: 20px; /* define o espaço interno à esquerda */
+    }
+
+    /* Estilos aplicados a: .perfil-linha::before */
+    .perfil-linha::before {
+        left: 12px; /* posiciona a partir da esquerda */
+    }
+
+    /* Estilos aplicados a: .perfil-evento */
+    .perfil-evento {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+        gap: 8px; /* define o espaço entre itens */
+        padding-left: 38px; /* define o espaço interno à esquerda */
+    }
+
+    /* Estilos aplicados a: .perfil-evento::before */
+    .perfil-evento::before {
+        left: 3px; /* posiciona a partir da esquerda */
+        top: 18px; /* posiciona a partir do topo */
+    }
+
+    /* Estilos aplicados a: .perfil-ano */
+    .perfil-ano {
+        text-align: left; /* alinha o texto */
+        font-size: 16px; /* define o tamanho da fonte */
+    }
+
+    /* Estilos aplicados a: .perfil-evento-conteudo */
+    .perfil-evento-conteudo {
+        margin-left: 0; /* define o espaço externo à esquerda */
+    }
+
+    /* Estilos aplicados a: .perfil-foto-wrap::before */
+    .perfil-foto-wrap::before {
+        inset: 14px -12px -14px 12px; /* define top/right/bottom/left de uma vez */
+    }
+
+}
 
 /* =========================================================
    BRASIL — SALA TEMÁTICA
    Página expositiva em HTML + CSS, sem JavaScript
 ========================================================= */
-
+/* Estilos aplicados a: .pagina-brasil */
 .pagina-brasil {
-    background: #f6f8f3;
+    background: #f6f8f3; /* define o fundo */
 }
 
+/* Estilos aplicados a: .pagina-brasil header */
 .pagina-brasil header {
-    border-bottom-color: rgba(5, 97, 59, .14);
+    border-bottom-color: rgba(5, 97, 59, .14); /* ajusta uma parte da borda */
 }
 
+/* Estilos aplicados a: .pagina-brasil nav a[aria-current="page"] */
 .pagina-brasil nav a[aria-current="page"] {
-    color: #0b6b43;
+    color: #0b6b43; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .pagina-brasil nav a[aria-current="page"]::after */
 .pagina-brasil nav a[aria-current="page"]::after {
-    width: 100%;
-    background: #f2c230;
+    width: 100%; /* define a largura */
+    background: #f2c230; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-main section */
 .brasil-main section {
-    position: relative;
+    position: relative; /* define o modo de posicionamento */
 }
 
+/* Estilos aplicados a: .brasil-hero */
 .brasil-hero {
-    min-height: 720px;
-    padding: 90px 8% 80px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    isolation: isolate;
-    color: #fff;
-    background:
-        radial-gradient(circle at 78% 34%, rgba(255,255,255,.10) 0 2px, transparent 3px),
+    min-height: 720px; /* define a altura mínima */
+    padding: 90px 8% 80px; /* define o espaço interno */
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    isolation: isolate; /* cria um novo contexto de empilhamento */
+    color: #fff; /* define a cor do texto */
+    background: radial-gradient(circle at 78% 34%, rgba(255,255,255,.10) 0 2px, transparent 3px),
         radial-gradient(circle at 87% 46%, rgba(255,255,255,.15) 0 2px, transparent 3px),
         radial-gradient(circle at 74% 55%, rgba(255,255,255,.10) 0 2px, transparent 3px),
-        linear-gradient(135deg, #073d2c 0%, #075b3b 42%, #087448 100%);
+        linear-gradient(135deg, #073d2c 0%, #075b3b 42%, #087448 100%); /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-hero::before */
 .brasil-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    opacity: .13;
-    background-image:
-        linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
-    background-size: 54px 54px;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    inset: 0; /* define top/right/bottom/left de uma vez */
+    z-index: -1; /* define a ordem de sobreposição */
+    opacity: .13; /* define a transparência */
+    background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px); /* define a imagem ou gradiente de fundo */
+    background-size: 54px 54px; /* define o tamanho do fundo */
 }
 
+/* Estilos aplicados a: .brasil-hero-conteudo */
 .brasil-hero-conteudo {
-    position: relative;
-    z-index: 3;
-    width: min(720px, 64%);
+    position: relative; /* define o modo de posicionamento */
+    z-index: 3; /* define a ordem de sobreposição */
+    width: min(720px, 64%); /* define a largura */
 }
 
+/* Estilos aplicados a: .brasil-selo, .brasil-kicker, .brasil-titulo-secao > p, .brasil-mini-area, .brasil... */
 .brasil-selo,
 .brasil-kicker,
 .brasil-titulo-secao > p,
 .brasil-mini-area,
 .brasil-area {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 900;
+    letter-spacing: 2px; /* define o espaço entre letras */
+    text-transform: uppercase; /* transforma maiúsculas/minúsculas */
+    font-weight: 900; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .brasil-selo */
 .brasil-selo {
-    display: inline-block;
-    padding: 8px 13px;
-    margin-bottom: 22px;
-    border: 1px solid rgba(255,255,255,.30);
-    border-radius: 999px;
-    color: #ffe370;
-    background: rgba(255,255,255,.08);
-    font-size: 11px;
+    display: inline-block; /* define o modelo de layout */
+    padding: 8px 13px; /* define o espaço interno */
+    margin-bottom: 22px; /* define o espaço externo abaixo */
+    border: 1px solid rgba(255,255,255,.30); /* define a borda */
+    border-radius: 999px; /* arredonda os cantos */
+    color: #ffe370; /* define a cor do texto */
+    background: rgba(255,255,255,.08); /* define o fundo */
+    font-size: 11px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-hero h1 */
 .brasil-hero h1 {
-    max-width: 760px;
-    margin: 0 0 24px;
-    color: #fff;
-    font-size: clamp(58px, 8vw, 112px);
-    line-height: .87;
-    letter-spacing: -5px;
+    max-width: 760px; /* define a largura máxima */
+    margin: 0 0 24px; /* define o espaço externo */
+    color: #fff; /* define a cor do texto */
+    font-size: clamp(58px, 8vw, 112px); /* define o tamanho da fonte */
+    line-height: .87; /* define o espaçamento entre linhas */
+    letter-spacing: -5px; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .brasil-hero h1 span */
 .brasil-hero h1 span {
-    color: #f7d43d;
+    color: #f7d43d; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .brasil-hero-texto */
 .brasil-hero-texto {
-    max-width: 670px !important;
-    margin-bottom: 31px !important;
-    color: rgba(255,255,255,.83) !important;
-    font-size: 19px !important;
-    line-height: 1.75;
+    max-width: 670px !important; /* define a largura máxima */
+    margin-bottom: 31px !important; /* define o espaço externo abaixo */
+    color: rgba(255,255,255,.83) !important; /* define a cor do texto */
+    font-size: 19px !important; /* define o tamanho da fonte */
+    line-height: 1.75; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-botao */
 .brasil-botao {
-    display: inline-flex;
-    align-items: center;
-    min-height: 52px;
-    padding: 13px 22px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #073d2c;
-    background: #f4cf37;
-    font-weight: 900;
-    box-shadow: 0 12px 30px rgba(0,0,0,.15);
-    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    display: inline-flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    min-height: 52px; /* define a altura mínima */
+    padding: 13px 22px; /* define o espaço interno */
+    border-radius: 10px; /* arredonda os cantos */
+    text-decoration: none; /* define decoração do texto */
+    color: #073d2c; /* define a cor do texto */
+    background: #f4cf37; /* define o fundo */
+    font-weight: 900; /* define a espessura da fonte */
+    box-shadow: 0 12px 30px rgba(0,0,0,.15); /* cria sombra ao redor do elemento */
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .brasil-botao:hover */
 .brasil-botao:hover {
-    transform: translateY(-3px);
-    background: #ffe267;
-    box-shadow: 0 18px 34px rgba(0,0,0,.20);
+    transform: translateY(-3px); /* aplica movimento, rotação ou escala */
+    background: #ffe267; /* define o fundo */
+    box-shadow: 0 18px 34px rgba(0,0,0,.20); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .brasil-bandeira-decor */
 .brasil-bandeira-decor {
-    position: absolute;
-    right: 4%;
-    top: 50%;
-    width: min(43vw, 600px);
-    aspect-ratio: 1.22;
-    transform: translateY(-50%);
-    z-index: 1;
-    opacity: .92;
+    position: absolute; /* define o modo de posicionamento */
+    right: 4%; /* posiciona a partir da direita */
+    top: 50%; /* posiciona a partir do topo */
+    width: min(43vw, 600px); /* define a largura */
+    aspect-ratio: 1.22; /* define a proporção largura/altura */
+    transform: translateY(-50%); /* aplica movimento, rotação ou escala */
+    z-index: 1; /* define a ordem de sobreposição */
+    opacity: .92; /* define a transparência */
 }
 
+/* Estilos aplicados a: .brasil-losango */
 .brasil-losango {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 68%;
-    aspect-ratio: 1;
-    transform: translate(-50%, -50%) rotate(45deg);
-    border: 3px solid rgba(247, 212, 61, .72);
-    background: rgba(247, 212, 61, .09);
+    position: absolute; /* define o modo de posicionamento */
+    left: 50%; /* posiciona a partir da esquerda */
+    top: 50%; /* posiciona a partir do topo */
+    width: 68%; /* define a largura */
+    aspect-ratio: 1; /* define a proporção largura/altura */
+    transform: translate(-50%, -50%) rotate(45deg); /* aplica movimento, rotação ou escala */
+    border: 3px solid rgba(247, 212, 61, .72); /* define a borda */
+    background: rgba(247, 212, 61, .09); /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-circulo */
 .brasil-circulo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 36%;
-    aspect-ratio: 1;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,.42);
-    background: rgba(14, 62, 128, .72);
-    box-shadow: inset 0 0 45px rgba(255,255,255,.10);
+    position: absolute; /* define o modo de posicionamento */
+    left: 50%; /* posiciona a partir da esquerda */
+    top: 50%; /* posiciona a partir do topo */
+    width: 36%; /* define a largura */
+    aspect-ratio: 1; /* define a proporção largura/altura */
+    transform: translate(-50%, -50%); /* aplica movimento, rotação ou escala */
+    border-radius: 50%; /* arredonda os cantos */
+    border: 2px solid rgba(255,255,255,.42); /* define a borda */
+    background: rgba(14, 62, 128, .72); /* define o fundo */
+    box-shadow: inset 0 0 45px rgba(255,255,255,.10); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .brasil-circulo::before */
 .brasil-circulo::before {
-    content: "";
-    position: absolute;
-    left: 3%;
-    right: 3%;
-    top: 48%;
-    height: 18%;
-    border-top: 4px solid rgba(255,255,255,.82);
-    border-radius: 50%;
-    transform: rotate(-8deg);
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    left: 3%; /* posiciona a partir da esquerda */
+    right: 3%; /* posiciona a partir da direita */
+    top: 48%; /* posiciona a partir do topo */
+    height: 18%; /* define a altura */
+    border-top: 4px solid rgba(255,255,255,.82); /* define a borda superior */
+    border-radius: 50%; /* arredonda os cantos */
+    transform: rotate(-8deg); /* aplica movimento, rotação ou escala */
 }
 
+/* Estilos aplicados a: .brasil-circulo i */
 .brasil-circulo i {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 0 8px rgba(255,255,255,.8);
+    position: absolute; /* define o modo de posicionamento */
+    width: 5px; /* define a largura */
+    height: 5px; /* define a altura */
+    border-radius: 50%; /* arredonda os cantos */
+    background: #fff; /* define o fundo */
+    box-shadow: 0 0 8px rgba(255,255,255,.8); /* cria sombra ao redor do elemento */
 }
-.brasil-circulo i:nth-child(1){left:30%;top:25%}
-.brasil-circulo i:nth-child(2){left:60%;top:20%}
-.brasil-circulo i:nth-child(3){left:73%;top:39%}
-.brasil-circulo i:nth-child(4){left:39%;top:66%}
-.brasil-circulo i:nth-child(5){left:66%;top:72%}
 
+/* Estilos aplicados a: .brasil-circulo i:nth-child(1) */
+.brasil-circulo i:nth-child(1) {
+    left: 30%; /* posiciona a partir da esquerda */
+    top: 25%; /* posiciona a partir do topo */
+}
+
+/* Estilos aplicados a: .brasil-circulo i:nth-child(2) */
+.brasil-circulo i:nth-child(2) {
+    left: 60%; /* posiciona a partir da esquerda */
+    top: 20%; /* posiciona a partir do topo */
+}
+
+/* Estilos aplicados a: .brasil-circulo i:nth-child(3) */
+.brasil-circulo i:nth-child(3) {
+    left: 73%; /* posiciona a partir da esquerda */
+    top: 39%; /* posiciona a partir do topo */
+}
+
+/* Estilos aplicados a: .brasil-circulo i:nth-child(4) */
+.brasil-circulo i:nth-child(4) {
+    left: 39%; /* posiciona a partir da esquerda */
+    top: 66%; /* posiciona a partir do topo */
+}
+
+/* Estilos aplicados a: .brasil-circulo i:nth-child(5) */
+.brasil-circulo i:nth-child(5) {
+    left: 66%; /* posiciona a partir da esquerda */
+    top: 72%; /* posiciona a partir do topo */
+}
+
+/* Estilos aplicados a: .brasil-palavra */
 .brasil-palavra {
-    position: absolute;
-    right: -20px;
-    bottom: -35px;
-    z-index: 0;
-    color: rgba(255,255,255,.045);
-    font-size: clamp(130px, 23vw, 330px);
-    font-weight: 900;
-    letter-spacing: -18px;
-    line-height: 1;
-    user-select: none;
+    position: absolute; /* define o modo de posicionamento */
+    right: -20px; /* posiciona a partir da direita */
+    bottom: -35px; /* posiciona a partir de baixo */
+    z-index: 0; /* define a ordem de sobreposição */
+    color: rgba(255,255,255,.045); /* define a cor do texto */
+    font-size: clamp(130px, 23vw, 330px); /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: -18px; /* define o espaço entre letras */
+    line-height: 1; /* define o espaçamento entre linhas */
+    user-select: none; /* controla seleção de texto */
 }
 
+/* Estilos aplicados a: .brasil-manifesto */
 .brasil-manifesto {
-    padding: 90px 10%;
-    display: grid;
-    grid-template-columns: 120px minmax(0, 1fr);
-    gap: 40px;
-    align-items: start;
-    background: #fff;
+    padding: 90px 10%; /* define o espaço interno */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: 120px minmax(0, 1fr); /* define as colunas da grade */
+    gap: 40px; /* define o espaço entre itens */
+    align-items: start; /* alinha itens no eixo secundário */
+    background: #fff; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-manifesto-numero */
 .brasil-manifesto-numero {
-    color: #e7bb1f;
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 1;
+    color: #e7bb1f; /* define a cor do texto */
+    font-size: 72px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    line-height: 1; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-kicker, .brasil-titulo-secao > p */
 .brasil-kicker,
 .brasil-titulo-secao > p {
-    margin-bottom: 8px !important;
-    color: #0b7850 !important;
-    font-size: 11px !important;
+    margin-bottom: 8px !important; /* define o espaço externo abaixo */
+    color: #0b7850 !important; /* define a cor do texto */
+    font-size: 11px !important; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-manifesto h2, .brasil-titulo-secao h2, .brasil-legado h2 */
 .brasil-manifesto h2,
 .brasil-titulo-secao h2,
 .brasil-legado h2 {
-    color: #093f31;
+    color: #093f31; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .brasil-manifesto h2 */
 .brasil-manifesto h2 {
-    margin-bottom: 17px;
-    font-size: clamp(34px, 5vw, 58px);
-    line-height: 1.05;
+    margin-bottom: 17px; /* define o espaço externo abaixo */
+    font-size: clamp(34px, 5vw, 58px); /* define o tamanho da fonte */
+    line-height: 1.05; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-manifesto p:last-child */
 .brasil-manifesto p:last-child {
-    max-width: 850px;
-    color: #50685d;
-    font-size: 18px;
-    line-height: 1.85;
+    max-width: 850px; /* define a largura máxima */
+    color: #50685d; /* define a cor do texto */
+    font-size: 18px; /* define o tamanho da fonte */
+    line-height: 1.85; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-pioneiras */
 .brasil-pioneiras {
-    padding: 90px 8% 105px !important;
-    overflow: hidden;
-    background: #f3f7ef;
+    padding: 90px 8% 105px !important; /* define o espaço interno */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    background: #f3f7ef; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-titulo-secao */
 .brasil-titulo-secao {
-    max-width: 1180px;
-    margin: 0 auto 48px;
+    max-width: 1180px; /* define a largura máxima */
+    margin: 0 auto 48px; /* define o espaço externo */
 }
 
+/* Estilos aplicados a: .brasil-titulo-secao h2 */
 .brasil-titulo-secao h2 {
-    max-width: 800px;
-    margin: 0;
-    font-size: clamp(34px, 4.8vw, 58px);
-    line-height: 1.05;
+    max-width: 800px; /* define a largura máxima */
+    margin: 0; /* define o espaço externo */
+    font-size: clamp(34px, 4.8vw, 58px); /* define o tamanho da fonte */
+    line-height: 1.05; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-destaque */
 .brasil-destaque {
-    max-width: 1180px;
-    margin: 0 auto 44px;
-    display: grid;
-    grid-template-columns: minmax(280px, 440px) minmax(0, 1fr);
-    gap: 64px;
-    align-items: center;
+    max-width: 1180px; /* define a largura máxima */
+    margin: 0 auto 44px; /* define o espaço externo */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: minmax(280px, 440px) minmax(0, 1fr); /* define as colunas da grade */
+    gap: 64px; /* define o espaço entre itens */
+    align-items: center; /* alinha itens no eixo secundário */
 }
 
+/* Estilos aplicados a: .brasil-destaque-johanna */
 .brasil-destaque-johanna {
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
-    margin-top: 75px;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 440px); /* define as colunas da grade */
+    margin-top: 75px; /* define o espaço externo acima */
 }
 
+/* Estilos aplicados a: .brasil-foto-moldura */
 .brasil-foto-moldura {
-    position: relative;
+    position: relative; /* define o modo de posicionamento */
 }
 
+/* Estilos aplicados a: .brasil-foto-moldura::before */
 .brasil-foto-moldura::before {
-    content: "";
-    position: absolute;
-    inset: 24px -20px -22px 22px;
-    z-index: 0;
-    border: 3px solid #f0c727;
-    border-radius: 22px;
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    inset: 24px -20px -22px 22px; /* define top/right/bottom/left de uma vez */
+    z-index: 0; /* define a ordem de sobreposição */
+    border: 3px solid #f0c727; /* define a borda */
+    border-radius: 22px; /* arredonda os cantos */
 }
 
+/* Estilos aplicados a: .brasil-destaque-johanna .brasil-foto-moldura::before */
 .brasil-destaque-johanna .brasil-foto-moldura::before {
-    border-color: #0e5d9f;
+    border-color: #0e5d9f; /* define a cor da borda */
 }
 
+/* Estilos aplicados a: .brasil-foto-moldura img */
 .brasil-foto-moldura img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 22px;
-    box-shadow: 0 24px 50px rgba(16, 76, 53, .18);
+    position: relative; /* define o modo de posicionamento */
+    z-index: 1; /* define a ordem de sobreposição */
+    display: block; /* define o modelo de layout */
+    width: 100%; /* define a largura */
+    aspect-ratio: 4 / 5; /* define a proporção largura/altura */
+    object-fit: cover; /* define como a imagem ocupa seu espaço */
+    object-position: center top; /* define a posição da imagem dentro do espaço */
+    border-radius: 22px; /* arredonda os cantos */
+    box-shadow: 0 24px 50px rgba(16, 76, 53, .18); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .brasil-indice */
 .brasil-indice {
-    position: absolute;
-    left: -25px;
-    top: -37px;
-    z-index: 2;
-    color: #0b7850;
-    font-size: 74px;
-    font-weight: 900;
-    line-height: 1;
-    opacity: .18;
+    position: absolute; /* define o modo de posicionamento */
+    left: -25px; /* posiciona a partir da esquerda */
+    top: -37px; /* posiciona a partir do topo */
+    z-index: 2; /* define a ordem de sobreposição */
+    color: #0b7850; /* define a cor do texto */
+    font-size: 74px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    line-height: 1; /* define o espaçamento entre linhas */
+    opacity: .18; /* define a transparência */
 }
 
+/* Estilos aplicados a: .brasil-area */
 .brasil-area {
-    margin-bottom: 9px !important;
-    color: #0b7850 !important;
-    font-size: 11px !important;
+    margin-bottom: 9px !important; /* define o espaço externo abaixo */
+    color: #0b7850 !important; /* define a cor do texto */
+    font-size: 11px !important; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-destaque h3 */
 .brasil-destaque h3 {
-    margin-bottom: 8px;
-    color: #0b4937;
-    font-size: clamp(34px, 5vw, 62px);
-    line-height: 1;
+    margin-bottom: 8px; /* define o espaço externo abaixo */
+    color: #0b4937; /* define a cor do texto */
+    font-size: clamp(34px, 5vw, 62px); /* define o tamanho da fonte */
+    line-height: 1; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-frase */
 .brasil-frase {
-    margin-bottom: 21px !important;
-    color: #c69d00 !important;
-    font-size: 21px !important;
-    font-weight: 800;
+    margin-bottom: 21px !important; /* define o espaço externo abaixo */
+    color: #c69d00 !important; /* define a cor do texto */
+    font-size: 21px !important; /* define o tamanho da fonte */
+    font-weight: 800; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .brasil-destaque-texto > p:not(.brasil-area):not(.brasil-frase) */
 .brasil-destaque-texto > p:not(.brasil-area):not(.brasil-frase) {
-    max-width: 700px;
-    color: #52685f;
-    font-size: 17px;
-    line-height: 1.8;
+    max-width: 700px; /* define a largura máxima */
+    color: #52685f; /* define a cor do texto */
+    font-size: 17px; /* define o tamanho da fonte */
+    line-height: 1.8; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-marco */
 .brasil-marco {
-    width: fit-content;
-    max-width: 620px;
-    margin: 25px 0 26px;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border-left: 5px solid #f0c727;
-    background: #fff;
-    box-shadow: 0 8px 22px rgba(20, 80, 52, .07);
+    width: fit-content; /* define a largura */
+    max-width: 620px; /* define a largura máxima */
+    margin: 25px 0 26px; /* define o espaço externo */
+    padding: 15px 20px; /* define o espaço interno */
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    gap: 16px; /* define o espaço entre itens */
+    border-left: 5px solid #f0c727; /* define a borda esquerda */
+    background: #fff; /* define o fundo */
+    box-shadow: 0 8px 22px rgba(20, 80, 52, .07); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .brasil-marco strong */
 .brasil-marco strong {
-    color: #0b7850;
-    font-size: 22px;
+    color: #0b7850; /* define a cor do texto */
+    font-size: 22px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-marco span */
 .brasil-marco span {
-    color: #51685e;
-    font-size: 14px;
+    color: #51685e; /* define a cor do texto */
+    font-size: 14px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-link-perfil */
 .brasil-link-perfil {
-    color: #0b7850;
-    font-weight: 900;
-    text-decoration: none;
-    transition: color .2s ease, padding-left .2s ease;
+    color: #0b7850; /* define a cor do texto */
+    font-weight: 900; /* define a espessura da fonte */
+    text-decoration: none; /* define decoração do texto */
+    transition: color .2s ease, padding-left .2s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .brasil-link-perfil:hover */
 .brasil-link-perfil:hover {
-    color: #b68f00;
-    padding-left: 5px;
+    color: #b68f00; /* define a cor do texto */
+    padding-left: 5px; /* define o espaço interno à esquerda */
 }
 
+/* Estilos aplicados a: .brasil-mosaico */
 .brasil-mosaico {
-    padding: 95px 8% 110px !important;
-    overflow: hidden;
-    color: #fff;
-    background:
-        linear-gradient(135deg, rgba(3,42,32,.97), rgba(5,89,59,.97)),
-        #064a34;
+    padding: 95px 8% 110px !important; /* define o espaço interno */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    color: #fff; /* define a cor do texto */
+    background: linear-gradient(135deg, rgba(3,42,32,.97), rgba(5,89,59,.97)),
+        #064a34; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-mosaico::before */
 .brasil-mosaico::before {
-    content: "";
-    position: absolute;
-    right: -140px;
-    top: -160px;
-    width: 460px;
-    height: 460px;
-    border: 2px solid rgba(244,207,55,.22);
-    transform: rotate(45deg);
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    right: -140px; /* posiciona a partir da direita */
+    top: -160px; /* posiciona a partir do topo */
+    width: 460px; /* define a largura */
+    height: 460px; /* define a altura */
+    border: 2px solid rgba(244,207,55,.22); /* define a borda */
+    transform: rotate(45deg); /* aplica movimento, rotação ou escala */
 }
 
-.brasil-titulo-claro > p { color: #f7d43d !important; }
-.brasil-titulo-claro h2 { color: #fff; }
+/* Estilos aplicados a: .brasil-titulo-claro > p */
+.brasil-titulo-claro > p {
+    color: #f7d43d !important; /* define a cor do texto */
+}
 
+/* Estilos aplicados a: .brasil-titulo-claro h2 */
+.brasil-titulo-claro h2 {
+    color: #fff; /* define a cor do texto */
+}
+
+/* Estilos aplicados a: .brasil-mosaico-grid */
 .brasil-mosaico-grid {
-    position: relative;
-    z-index: 2;
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 18px;
+    position: relative; /* define o modo de posicionamento */
+    z-index: 2; /* define a ordem de sobreposição */
+    max-width: 1180px; /* define a largura máxima */
+    margin: 0 auto; /* define o espaço externo */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: repeat(6, 1fr); /* define as colunas da grade */
+    gap: 18px; /* define o espaço entre itens */
 }
 
+/* Estilos aplicados a: .brasil-mini-card */
 .brasil-mini-card {
-    grid-column: span 2;
-    min-height: 300px;
-    padding: 26px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255,255,255,.16);
-    border-radius: 18px;
-    background: rgba(255,255,255,.07);
-    backdrop-filter: blur(4px);
+    grid-column: span 2; /* define onde o item ocupa colunas */
+    min-height: 300px; /* define a altura mínima */
+    padding: 26px; /* define o espaço interno */
+    display: flex; /* define o modelo de layout */
+    flex-direction: column; /* define a direção dos itens flexíveis */
+    border: 1px solid rgba(255,255,255,.16); /* define a borda */
+    border-radius: 18px; /* arredonda os cantos */
+    background: rgba(255,255,255,.07); /* define o fundo */
+    backdrop-filter: blur(4px); /* aplica efeito no fundo atrás do elemento */
 }
 
+/* Estilos aplicados a: .brasil-mini-card:nth-child(4), .brasil-mini-card:nth-child(5) */
 .brasil-mini-card:nth-child(4),
 .brasil-mini-card:nth-child(5) {
-    grid-column: span 3;
+    grid-column: span 3; /* define onde o item ocupa colunas */
 }
 
+/* Estilos aplicados a: .brasil-mini-card-amarelo */
 .brasil-mini-card-amarelo {
-    color: #173d2c;
-    background: #f1c92c;
-    border-color: #f1c92c;
+    color: #173d2c; /* define a cor do texto */
+    background: #f1c92c; /* define o fundo */
+    border-color: #f1c92c; /* define a cor da borda */
 }
 
+/* Estilos aplicados a: .brasil-mini-card-azul */
 .brasil-mini-card-azul {
-    background: #0b4f88;
-    border-color: #216ba4;
+    background: #0b4f88; /* define o fundo */
+    border-color: #216ba4; /* define a cor da borda */
 }
 
+/* Estilos aplicados a: .brasil-iniciais */
 .brasil-iniciais {
-    width: 54px;
-    height: 54px;
-    margin-bottom: 28px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    color: #f7d43d;
-    border: 1px solid rgba(255,255,255,.28);
-    font-size: 14px;
-    font-weight: 900;
-    letter-spacing: 1px;
+    width: 54px; /* define a largura */
+    height: 54px; /* define a altura */
+    margin-bottom: 28px; /* define o espaço externo abaixo */
+    display: grid; /* define o modelo de layout */
+    place-items: center; /* alinha itens nos dois eixos */
+    border-radius: 50%; /* arredonda os cantos */
+    color: #f7d43d; /* define a cor do texto */
+    border: 1px solid rgba(255,255,255,.28); /* define a borda */
+    font-size: 14px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: 1px; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .brasil-mini-card-amarelo .brasil-iniciais */
 .brasil-mini-card-amarelo .brasil-iniciais {
-    color: #fff;
-    background: #0a6042;
-    border-color: #0a6042;
+    color: #fff; /* define a cor do texto */
+    background: #0a6042; /* define o fundo */
+    border-color: #0a6042; /* define a cor da borda */
 }
 
+/* Estilos aplicados a: .brasil-mini-card h3 */
 .brasil-mini-card h3 {
-    margin-bottom: 11px;
-    color: #fff;
-    font-size: 25px;
+    margin-bottom: 11px; /* define o espaço externo abaixo */
+    color: #fff; /* define a cor do texto */
+    font-size: 25px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-mini-card-amarelo h3, .brasil-mini-card-amarelo p */
 .brasil-mini-card-amarelo h3,
 .brasil-mini-card-amarelo p {
-    color: #113c2d !important;
+    color: #113c2d !important; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .brasil-mini-area */
 .brasil-mini-area {
-    margin-bottom: 5px !important;
-    color: #f7d43d !important;
-    font-size: 9px !important;
+    margin-bottom: 5px !important; /* define o espaço externo abaixo */
+    color: #f7d43d !important; /* define a cor do texto */
+    font-size: 9px !important; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-mini-card-amarelo .brasil-mini-area */
 .brasil-mini-card-amarelo .brasil-mini-area {
-    color: #09553b !important;
+    color: #09553b !important; /* define a cor do texto */
 }
 
+/* Estilos aplicados a: .brasil-mini-card > p:last-child */
 .brasil-mini-card > p:last-child {
-    margin-bottom: 0 !important;
-    color: rgba(255,255,255,.76) !important;
-    font-size: 14px !important;
-    line-height: 1.7;
+    margin-bottom: 0 !important; /* define o espaço externo abaixo */
+    color: rgba(255,255,255,.76) !important; /* define a cor do texto */
+    font-size: 14px !important; /* define o tamanho da fonte */
+    line-height: 1.7; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-faixa-impacto */
 .brasil-faixa-impacto {
-    padding: 105px 8% !important;
-    text-align: center;
-    overflow: hidden;
-    background: #f4ce31;
+    padding: 105px 8% !important; /* define o espaço interno */
+    text-align: center; /* alinha o texto */
+    overflow: hidden; /* controla o conteúdo que ultrapassa o limite */
+    background: #f4ce31; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-faixa-impacto::before, .brasil-faixa-impacto::after */
 .brasil-faixa-impacto::before,
 .brasil-faixa-impacto::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    border: 36px solid rgba(8, 86, 57, .08);
-    transform: rotate(45deg);
+    content: ""; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    width: 280px; /* define a largura */
+    height: 280px; /* define a altura */
+    border: 36px solid rgba(8, 86, 57, .08); /* define a borda */
+    transform: rotate(45deg); /* aplica movimento, rotação ou escala */
 }
 
-.brasil-faixa-impacto::before { left: -145px; top: -120px; }
-.brasil-faixa-impacto::after { right: -145px; bottom: -120px; }
+/* Estilos aplicados a: .brasil-faixa-impacto::before */
+.brasil-faixa-impacto::before {
+    left: -145px; /* posiciona a partir da esquerda */
+    top: -120px; /* posiciona a partir do topo */
+}
 
+/* Estilos aplicados a: .brasil-faixa-impacto::after */
+.brasil-faixa-impacto::after {
+    right: -145px; /* posiciona a partir da direita */
+    bottom: -120px; /* posiciona a partir de baixo */
+}
+
+/* Estilos aplicados a: .brasil-faixa-estrelas */
 .brasil-faixa-estrelas {
-    margin-bottom: 20px;
-    color: #0b6b43;
-    letter-spacing: 10px;
+    margin-bottom: 20px; /* define o espaço externo abaixo */
+    color: #0b6b43; /* define a cor do texto */
+    letter-spacing: 10px; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .brasil-faixa-impacto > p */
 .brasil-faixa-impacto > p {
-    max-width: none !important;
-    margin: 2px 0 !important;
-    color: #0a5b3d !important;
-    font-size: 15px !important;
-    font-weight: 900;
-    letter-spacing: 3px;
+    max-width: none !important; /* define a largura máxima */
+    margin: 2px 0 !important; /* define o espaço externo */
+    color: #0a5b3d !important; /* define a cor do texto */
+    font-size: 15px !important; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
+    letter-spacing: 3px; /* define o espaço entre letras */
 }
 
+/* Estilos aplicados a: .brasil-faixa-impacto h2 */
 .brasil-faixa-impacto h2 {
-    max-width: 980px;
-    margin: 14px auto 18px;
-    color: #083f30;
-    font-size: clamp(42px, 7vw, 84px);
-    line-height: .98;
+    max-width: 980px; /* define a largura máxima */
+    margin: 14px auto 18px; /* define o espaço externo */
+    color: #083f30; /* define a cor do texto */
+    font-size: clamp(42px, 7vw, 84px); /* define o tamanho da fonte */
+    line-height: .98; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-faixa-impacto span */
 .brasil-faixa-impacto span {
-    color: #315446;
-    font-size: 17px;
+    color: #315446; /* define a cor do texto */
+    font-size: 17px; /* define o tamanho da fonte */
 }
 
+/* Estilos aplicados a: .brasil-legado */
 .brasil-legado {
-    min-height: 590px;
-    padding: 95px 9% !important;
-    display: grid;
-    grid-template-columns: minmax(240px, .7fr) minmax(0, 1.3fr);
-    gap: 80px;
-    align-items: center;
-    background: #fff;
+    min-height: 590px; /* define a altura mínima */
+    padding: 95px 9% !important; /* define o espaço interno */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: minmax(240px, .7fr) minmax(0, 1.3fr); /* define as colunas da grade */
+    gap: 80px; /* define o espaço entre itens */
+    align-items: center; /* alinha itens no eixo secundário */
+    background: #fff; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-legado-simbolo */
 .brasil-legado-simbolo {
-    position: relative;
-    width: min(340px, 78vw);
-    aspect-ratio: 1;
-    justify-self: center;
-    transform: rotate(45deg);
-    border: 3px solid #f0c727;
-    background: rgba(240, 199, 39, .08);
+    position: relative; /* define o modo de posicionamento */
+    width: min(340px, 78vw); /* define a largura */
+    aspect-ratio: 1; /* define a proporção largura/altura */
+    justify-self: center; /* configura esta característica visual */
+    transform: rotate(45deg); /* aplica movimento, rotação ou escala */
+    border: 3px solid #f0c727; /* define a borda */
+    background: rgba(240, 199, 39, .08); /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-legado-simbolo span */
 .brasil-legado-simbolo span {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 48%;
-    aspect-ratio: 1;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    background: #0b4f88;
-    box-shadow: 0 0 0 25px rgba(5, 107, 67, .10);
+    position: absolute; /* define o modo de posicionamento */
+    left: 50%; /* posiciona a partir da esquerda */
+    top: 50%; /* posiciona a partir do topo */
+    width: 48%; /* define a largura */
+    aspect-ratio: 1; /* define a proporção largura/altura */
+    transform: translate(-50%,-50%); /* aplica movimento, rotação ou escala */
+    border-radius: 50%; /* arredonda os cantos */
+    background: #0b4f88; /* define o fundo */
+    box-shadow: 0 0 0 25px rgba(5, 107, 67, .10); /* cria sombra ao redor do elemento */
 }
 
+/* Estilos aplicados a: .brasil-legado-simbolo span::after */
 .brasil-legado-simbolo span::after {
-    content: "BR";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
-    color: #fff;
-    font-size: 38px;
-    font-weight: 900;
+    content: "BR"; /* cria conteúdo em pseudo-elementos */
+    position: absolute; /* define o modo de posicionamento */
+    left: 50%; /* posiciona a partir da esquerda */
+    top: 50%; /* posiciona a partir do topo */
+    transform: translate(-50%,-50%) rotate(-45deg); /* aplica movimento, rotação ou escala */
+    color: #fff; /* define a cor do texto */
+    font-size: 38px; /* define o tamanho da fonte */
+    font-weight: 900; /* define a espessura da fonte */
 }
 
+/* Estilos aplicados a: .brasil-legado h2 */
 .brasil-legado h2 {
-    max-width: 880px;
-    margin-bottom: 21px;
-    font-size: clamp(38px, 5vw, 64px);
-    line-height: 1.05;
+    max-width: 880px; /* define a largura máxima */
+    margin-bottom: 21px; /* define o espaço externo abaixo */
+    font-size: clamp(38px, 5vw, 64px); /* define o tamanho da fonte */
+    line-height: 1.05; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-legado-texto > p:not(.brasil-kicker) */
 .brasil-legado-texto > p:not(.brasil-kicker) {
-    max-width: 820px;
-    margin-bottom: 28px !important;
-    color: #53695f !important;
-    font-size: 17px !important;
-    line-height: 1.8;
+    max-width: 820px; /* define a largura máxima */
+    margin-bottom: 28px !important; /* define o espaço externo abaixo */
+    color: #53695f !important; /* define a cor do texto */
+    font-size: 17px !important; /* define o tamanho da fonte */
+    line-height: 1.8; /* define o espaçamento entre linhas */
 }
 
+/* Estilos aplicados a: .brasil-botao-claro */
 .brasil-botao-claro {
-    color: #fff;
-    background: #0a6a47;
+    color: #fff; /* define a cor do texto */
+    background: #0a6a47; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-botao-claro:hover */
 .brasil-botao-claro:hover {
-    background: #075337;
+    background: #075337; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-fontes */
 .brasil-fontes {
-    padding: 75px 8% 90px !important;
-    background: #eef4ec;
+    padding: 75px 8% 90px !important; /* define o espaço interno */
+    background: #eef4ec; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-fontes-grid */
 .brasil-fontes-grid {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    max-width: 1180px; /* define a largura máxima */
+    margin: 0 auto; /* define o espaço externo */
+    display: grid; /* define o modelo de layout */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* define as colunas da grade */
+    gap: 12px; /* define o espaço entre itens */
 }
 
+/* Estilos aplicados a: .brasil-fontes-grid a */
 .brasil-fontes-grid a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    min-height: 62px;
-    padding: 14px 18px;
-    border: 1px solid #d2dfcf;
-    border-radius: 10px;
-    color: #2e5445;
-    background: rgba(255,255,255,.72);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    display: flex; /* define o modelo de layout */
+    align-items: center; /* alinha itens no eixo secundário */
+    justify-content: space-between; /* alinha itens no eixo principal */
+    gap: 20px; /* define o espaço entre itens */
+    min-height: 62px; /* define a altura mínima */
+    padding: 14px 18px; /* define o espaço interno */
+    border: 1px solid #d2dfcf; /* define a borda */
+    border-radius: 10px; /* arredonda os cantos */
+    color: #2e5445; /* define a cor do texto */
+    background: rgba(255,255,255,.72); /* define o fundo */
+    text-decoration: none; /* define decoração do texto */
+    font-size: 14px; /* define o tamanho da fonte */
+    font-weight: 700; /* define a espessura da fonte */
+    transition: transform .2s ease, border-color .2s ease, background .2s ease; /* suaviza mudanças de estilo */
 }
 
+/* Estilos aplicados a: .brasil-fontes-grid a:hover */
 .brasil-fontes-grid a:hover {
-    transform: translateY(-2px);
-    border-color: #75a48d;
-    background: #fff;
+    transform: translateY(-2px); /* aplica movimento, rotação ou escala */
+    border-color: #75a48d; /* define a cor da borda */
+    background: #fff; /* define o fundo */
 }
 
+/* Estilos aplicados a: .brasil-fontes-grid span */
 .brasil-fontes-grid span {
-    color: #0b7850;
-    font-size: 18px;
+    color: #0b7850; /* define a cor do texto */
+    font-size: 18px; /* define o tamanho da fonte */
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 1000px) {
-    .brasil-hero-conteudo { width: 72%; }
-    .brasil-bandeira-decor { right: -8%; opacity: .50; }
+    /* Estilos aplicados a: .brasil-hero-conteudo */
+    .brasil-hero-conteudo {
+        width: 72%; /* define a largura */
+    }
+
+    /* Estilos aplicados a: .brasil-bandeira-decor */
+    .brasil-bandeira-decor {
+        right: -8%; /* posiciona a partir da direita */
+        opacity: .50; /* define a transparência */
+    }
+
+    /* Estilos aplicados a: .brasil-destaque, .brasil-destaque-johanna */
     .brasil-destaque,
-    .brasil-destaque-johanna { gap: 42px; }
-    .brasil-mosaico-grid { grid-template-columns: repeat(2, 1fr); }
+    .brasil-destaque-johanna {
+        gap: 42px; /* define o espaço entre itens */
+    }
+
+    /* Estilos aplicados a: .brasil-mosaico-grid */
+    .brasil-mosaico-grid {
+        grid-template-columns: repeat(2, 1fr); /* define as colunas da grade */
+    }
+
+    /* Estilos aplicados a: .brasil-mini-card, .brasil-mini-card:nth-child(4), .brasil-mini-card:nth-child(5) */
     .brasil-mini-card,
     .brasil-mini-card:nth-child(4),
-    .brasil-mini-card:nth-child(5) { grid-column: auto; }
-    .brasil-mini-card:last-child { grid-column: 1 / -1; }
+    .brasil-mini-card:nth-child(5) {
+        grid-column: auto; /* define onde o item ocupa colunas */
+    }
+
+    /* Estilos aplicados a: .brasil-mini-card:last-child */
+    .brasil-mini-card:last-child {
+        grid-column: 1 / -1; /* define onde o item ocupa colunas */
+    }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 800px) {
-    .brasil-hero { min-height: 650px; }
-    .brasil-hero-conteudo { width: 100%; }
-    .brasil-bandeira-decor { right: -35%; width: 90vw; opacity: .24; }
-    .brasil-palavra { font-size: 170px; letter-spacing: -11px; }
-    .brasil-manifesto { grid-template-columns: 1fr; gap: 15px; }
-    .brasil-manifesto-numero { font-size: 48px; }
+    /* Estilos aplicados a: .brasil-hero */
+    .brasil-hero {
+        min-height: 650px; /* define a altura mínima */
+    }
+
+    /* Estilos aplicados a: .brasil-hero-conteudo */
+    .brasil-hero-conteudo {
+        width: 100%; /* define a largura */
+    }
+
+    /* Estilos aplicados a: .brasil-bandeira-decor */
+    .brasil-bandeira-decor {
+        right: -35%; /* posiciona a partir da direita */
+        width: 90vw; /* define a largura */
+        opacity: .24; /* define a transparência */
+    }
+
+    /* Estilos aplicados a: .brasil-palavra */
+    .brasil-palavra {
+        font-size: 170px; /* define o tamanho da fonte */
+        letter-spacing: -11px; /* define o espaço entre letras */
+    }
+
+    /* Estilos aplicados a: .brasil-manifesto */
+    .brasil-manifesto {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+        gap: 15px; /* define o espaço entre itens */
+    }
+
+    /* Estilos aplicados a: .brasil-manifesto-numero */
+    .brasil-manifesto-numero {
+        font-size: 48px; /* define o tamanho da fonte */
+    }
+
+    /* Estilos aplicados a: .brasil-destaque, .brasil-destaque-johanna */
     .brasil-destaque,
-    .brasil-destaque-johanna { grid-template-columns: 1fr; }
-    .brasil-destaque-johanna .brasil-destaque-texto { order: 2; }
-    .brasil-destaque-johanna .brasil-foto-moldura { order: 1; }
-    .brasil-foto-moldura { width: min(100%, 440px); }
-    .brasil-legado { grid-template-columns: 1fr; gap: 52px; }
-    .brasil-fontes-grid { grid-template-columns: 1fr; }
+    .brasil-destaque-johanna {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+    }
+
+    /* Estilos aplicados a: .brasil-destaque-johanna .brasil-destaque-texto */
+    .brasil-destaque-johanna .brasil-destaque-texto {
+        order: 2; /* define a ordem visual do item */
+    }
+
+    /* Estilos aplicados a: .brasil-destaque-johanna .brasil-foto-moldura */
+    .brasil-destaque-johanna .brasil-foto-moldura {
+        order: 1; /* define a ordem visual do item */
+    }
+
+    /* Estilos aplicados a: .brasil-foto-moldura */
+    .brasil-foto-moldura {
+        width: min(100%, 440px); /* define a largura */
+    }
+
+    /* Estilos aplicados a: .brasil-legado */
+    .brasil-legado {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+        gap: 52px; /* define o espaço entre itens */
+    }
+
+    /* Estilos aplicados a: .brasil-fontes-grid */
+    .brasil-fontes-grid {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+    }
+
 }
 
+/* Aplica estilos apenas nesta condição de tela. */
 @media (max-width: 600px) {
-    .brasil-hero { min-height: 590px; padding: 72px 6% 65px; }
-    .brasil-hero h1 { letter-spacing: -3px; }
-    .brasil-hero-texto { font-size: 16px !important; }
+    /* Estilos aplicados a: .brasil-hero */
+    .brasil-hero {
+        min-height: 590px; /* define a altura mínima */
+        padding: 72px 6% 65px; /* define o espaço interno */
+    }
+
+    /* Estilos aplicados a: .brasil-hero h1 */
+    .brasil-hero h1 {
+        letter-spacing: -3px; /* define o espaço entre letras */
+    }
+
+    /* Estilos aplicados a: .brasil-hero-texto */
+    .brasil-hero-texto {
+        font-size: 16px !important; /* define o tamanho da fonte */
+    }
+
+    /* Estilos aplicados a: .brasil-manifesto, .brasil-pioneiras, .brasil-mosaico, .brasil-faixa-impacto, .bra... */
     .brasil-manifesto,
     .brasil-pioneiras,
     .brasil-mosaico,
     .brasil-faixa-impacto,
     .brasil-legado,
-    .brasil-fontes { padding-left: 6% !important; padding-right: 6% !important; }
-    .brasil-mosaico-grid { grid-template-columns: 1fr; }
+    .brasil-fontes {
+        padding-left: 6% !important; /* define o espaço interno à esquerda */
+        padding-right: 6% !important; /* define o espaço interno à direita */
+    }
+
+    /* Estilos aplicados a: .brasil-mosaico-grid */
+    .brasil-mosaico-grid {
+        grid-template-columns: 1fr; /* define as colunas da grade */
+    }
+
+    /* Estilos aplicados a: .brasil-mini-card, .brasil-mini-card:last-child */
     .brasil-mini-card,
-    .brasil-mini-card:last-child { grid-column: auto; }
-    .brasil-marco { align-items: flex-start; flex-direction: column; gap: 3px; }
-    .brasil-legado-simbolo { width: 230px; }
+    .brasil-mini-card:last-child {
+        grid-column: auto; /* define onde o item ocupa colunas */
+    }
+
+    /* Estilos aplicados a: .brasil-marco */
+    .brasil-marco {
+        align-items: flex-start; /* alinha itens no eixo secundário */
+        flex-direction: column; /* define a direção dos itens flexíveis */
+        gap: 3px; /* define o espaço entre itens */
+    }
+
+    /* Estilos aplicados a: .brasil-legado-simbolo */
+    .brasil-legado-simbolo {
+        width: 230px; /* define a largura */
+    }
+
 }
