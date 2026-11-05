@@ -1,145 +1,146 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>Explorar | Elas na Ciência</title>
-  <link href="css/style.css" rel="stylesheet"/>
-  <script defer="" src="js/explorar.js">
-  </script>
- </head>
- <body class="page-explore">
-  <header class="site-header">
-   <a class="brand" href="index.html">ELAS NA CIÊNCIA</a>
-   <nav aria-label="Navegação principal" class="main-nav">
-    <a href="index.html">Início</a>
-    <a aria-current="page" href="explorar.html">Explorar</a>
-    <a href="quiz.html">Quiz</a>
-    <a href="sobre.html">Sobre</a>
-   </nav>
-  </header>
-  <main class="explore-page">
-   <div class="explore-shell">
-    <section aria-labelledby="choices-heading" class="explore-choices">
-     <div class="choices-heading">
-      <div>
-       <p class="eyebrow">SELECIONE UM TEMA</p>
-       <h2 id="choices-heading">Escolha seu caminho</h2>
-      </div>
-      <span class="choice-count">06 TEMAS</span>
-     </div>
-     <div class="explore-grid">
-      <button aria-pressed="true" class="explore-option topic-cotidiano is-active" data-alt="Café sendo passado com filtro de papel" data-count="3 histórias" data-image="img/fotos/cafe.jpg" data-link="cotidiano.html" data-text="Objetos e soluções que passaram a fazer parte da nossa rotina." data-title="Cotidiano" type="button">
-       <span class="option-head">
-        <span class="option-symbol option-symbol-photo">
-         <img alt="Café sendo passado com filtro de papel" loading="lazy" src="img/fotos/cafe.jpg"/>
-        </span>
-        <span class="option-index">01</span>
-       </span>
-       <span class="option-text">
-        <strong>Cotidiano</strong>
-        <small>A ciência no que é familiar.</small>
-       </span>
-       <span aria-hidden="true" class="option-arrow">↗</span>
-      </button>
-      <button aria-pressed="false" class="explore-option topic-tecnologia" data-alt="Código de programação mostrado em uma tela" data-count="3 histórias" data-image="img/fotos/codigo.jpg" data-link="tecnologia.html" data-text="Programação, comunicação e ideias muito antes dos aparelhos modernos." data-title="Tecnologia" type="button">
-       <span class="option-head">
-        <span class="option-symbol option-symbol-photo">
-         <img alt="Código de programação mostrado em uma tela" loading="lazy" src="img/fotos/codigo.jpg"/>
-        </span>
-        <span class="option-index">02</span>
-       </span>
-       <span class="option-text">
-        <strong>Tecnologia</strong>
-        <small>Ideias que nos conectam.</small>
-       </span>
-       <span aria-hidden="true" class="option-arrow">↗</span>
-      </button>
-      <button aria-pressed="false" class="explore-option topic-medicina" data-alt="Pessoas usando microscópio em laboratório" data-count="4 histórias" data-image="img/fotos/microscopio.jpg" data-link="medicina.html" data-text="Pesquisas que revelam moléculas, tratamentos e novas formas de cuidar." data-title="Medicina" type="button">
-       <span class="option-head">
-        <span class="option-symbol option-symbol-photo">
-         <img alt="Pessoas usando microscópio em laboratório" loading="lazy" src="img/fotos/microscopio.jpg"/>
-        </span>
-        <span class="option-index">03</span>
-       </span>
-       <span class="option-text">
-        <strong>Medicina</strong>
-        <small>Conhecimento que cuida.</small>
-       </span>
-       <span aria-hidden="true" class="option-arrow">↗</span>
-      </button>
-      <button aria-pressed="false" class="explore-option topic-espaco" data-alt="Lançamento da missão Friendship 7, em 1962" data-count="1 história" data-image="img/fotos/missao.jpg" data-link="espaco.html" data-text="Os cálculos que ajudaram pessoas a viajar além da Terra." data-title="Espaço" type="button">
-       <span class="option-head">
-        <span class="option-symbol option-symbol-photo">
-         <img alt="Lançamento da missão Friendship 7, em 1962" loading="lazy" src="img/fotos/missao.jpg"/>
-        </span>
-        <span class="option-index">04</span>
-       </span>
-       <span class="option-text">
-        <strong>Espaço</strong>
-        <small>A matemática além da Terra.</small>
-       </span>
-       <span aria-hidden="true" class="option-arrow">↗</span>
-      </button>
-      <button aria-pressed="false" class="explore-option topic-brasil" data-alt="Nódulos de bactérias fixadoras de nitrogênio nas raízes de soja" data-count="4 trajetórias" data-image="img/fotos/raizes.jpg" data-link="brasil.html" data-text="Pesquisas que transformaram a saúde, o campo e a educação." data-title="Brasil" type="button">
-       <span class="option-head">
-        <span class="option-symbol option-symbol-photo">
-         <img alt="Nódulos de bactérias fixadoras de nitrogênio nas raízes de soja" loading="lazy" src="img/fotos/raizes.jpg"/>
-        </span>
-        <span class="option-index">05</span>
-       </span>
-       <span class="option-text">
-        <strong>Brasil</strong>
-        <small>Ciência produzida aqui.</small>
-       </span>
-       <span aria-hidden="true" class="option-arrow">↗</span>
-      </button>
-      <button aria-pressed="false" class="explore-option topic-descobertas" data-alt="Modelo físico da dupla hélice de DNA em museu" data-count="4 histórias" data-image="img/fotos/dna.jpg" data-link="descobertas.html" data-text="Novas pistas sobre o DNA, a matéria e a história da vida." data-title="Descobertas" type="button">
-       <span class="option-head">
-        <span class="option-symbol option-symbol-photo">
-         <img alt="Modelo físico da dupla hélice de DNA em museu" loading="lazy" src="img/fotos/dna.jpg"/>
-        </span>
-        <span class="option-index">06</span>
-       </span>
-       <span class="option-text">
-        <strong>Descobertas</strong>
-        <small>Novas formas de enxergar.</small>
-       </span>
-       <span aria-hidden="true" class="option-arrow">↗</span>
-      </button>
-     </div>
-     <p class="choice-tip">Selecione um tema e conheça a história em destaque.</p>
-    </section>
-    <section aria-label="Prévia do tema escolhido" aria-live="polite" class="explore-feature" id="exploreFeature">
-     <div class="feature-photo">
-      <img alt="Café sendo passado com filtro de papel" id="coreImage" src="img/fotos/cafe.jpg"/>
-      <span class="photo-shade"> </span>
-     </div>
-     <div class="feature-top">
-      <span class="feature-mark">E / C</span>
-      <span class="feature-tag">IDEIAS QUE TRANSFORMARAM O MUNDO</span>
-     </div>
-     <div class="feature-content">
-      <p class="feature-counter" id="coreCount">3 histórias</p>
-      <h2 id="coreTitle">Cotidiano</h2>
-      <p id="coreText">Objetos e soluções que passaram a fazer parte da nossa rotina.</p>
-      <a class="feature-action" href="cotidiano.html" id="coreLink">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Explorar | Elas na Ciência</title>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/explorar.js">
+</script>
+</head>
+<body class="page-explore">
+<header class="site-header">
+<a class="brand" href="index.html">ELAS NA CIÊNCIA</a>
+<nav aria-label="Navegação principal" class="main-nav">
+<a href="index.html">Início</a>
+<a aria-current="page" href="explorar.html">Explorar</a>
+<a href="quiz.html">Quiz</a>
+<a href="sobre.html">Sobre</a>
+</nav>
+</header>
+<main class="explore-page">
+<div class="explore-shell">
+<section aria-labelledby="choices-heading" class="explore-choices">
+<div class="choices-heading">
+<div>
+<p class="eyebrow">SELECIONE UM TEMA</p>
+<h2 id="choices-heading">Escolha seu caminho</h2>
+</div>
+<span class="choice-count">06 TEMAS</span>
+</div>
+<div class="explore-grid">
+<button aria-pressed="true" class="explore-option topic-cotidiano is-active" data-alt="Café sendo passado com filtro de papel" data-count="8 histórias" data-image="img/fotos/cafe.jpg" data-link="cotidiano.html" data-text="Uma rotina completa, do café da manhã à noite. Descubra invenções presentes no seu dia." data-title="Cotidiano" type="button">
+<span class="option-head">
+<span class="option-symbol option-symbol-photo">
+<img alt="Café sendo passado com filtro de papel" loading="lazy" src="img/fotos/cafe.jpg"/>
+</span>
+<span class="option-index">01</span>
+</span>
+<span class="option-text">
+<strong>Cotidiano</strong>
+<small>Da primeira xícara de café aos objetos do fim do dia.</small>
+</span>
+<span aria-hidden="true" class="option-arrow">↗</span>
+</button>
+<button aria-pressed="false" class="explore-option topic-tecnologia" data-alt="Código de programação mostrado em uma tela" data-count="3 histórias" data-image="img/fotos/codigo.jpg" data-link="tecnologia.html" data-text="Programação, comunicação e ideias muito antes dos aparelhos modernos." data-title="Tecnologia" type="button">
+<span class="option-head">
+<span class="option-symbol option-symbol-photo">
+<img alt="Código de programação mostrado em uma tela" loading="lazy" src="img/fotos/codigo.jpg"/>
+</span>
+<span class="option-index">02</span>
+</span>
+<span class="option-text">
+<strong>Tecnologia</strong>
+<small>Ideias que nos conectam.</small>
+</span>
+<span aria-hidden="true" class="option-arrow">↗</span>
+</button>
+<button aria-pressed="false" class="explore-option topic-medicina" data-alt="Pessoas usando microscópio em laboratório" data-count="4 histórias" data-image="img/fotos/microscopio.jpg" data-link="medicina.html" data-text="Pesquisas que revelam moléculas, tratamentos e novas formas de cuidar." data-title="Medicina" type="button">
+<span class="option-head">
+<span class="option-symbol option-symbol-photo">
+<img alt="Pessoas usando microscópio em laboratório" loading="lazy" src="img/fotos/microscopio.jpg"/>
+</span>
+<span class="option-index">03</span>
+</span>
+<span class="option-text">
+<strong>Medicina</strong>
+<small>Conhecimento que cuida.</small>
+</span>
+<span aria-hidden="true" class="option-arrow">↗</span>
+</button>
+<button aria-pressed="false" class="explore-option topic-espaco" data-alt="Lançamento da missão Friendship 7, em 1962" data-count="1 história" data-image="img/fotos/missao.jpg" data-link="espaco.html" data-text="Os cálculos que ajudaram pessoas a viajar além da Terra." data-title="Espaço" type="button">
+<span class="option-head">
+<span class="option-symbol option-symbol-photo">
+<img alt="Lançamento da missão Friendship 7, em 1962" loading="lazy" src="img/fotos/missao.jpg"/>
+</span>
+<span class="option-index">04</span>
+</span>
+<span class="option-text">
+<strong>Espaço</strong>
+<small>A matemática além da Terra.</small>
+</span>
+<span aria-hidden="true" class="option-arrow">↗</span>
+</button>
+<button aria-pressed="false" class="explore-option topic-brasil" data-alt="Nódulos de bactérias fixadoras de nitrogênio nas raízes de soja" data-count="4 trajetórias" data-image="img/fotos/raizes.jpg" data-link="brasil.html" data-text="Pesquisas que transformaram a saúde, o campo e a educação." data-title="Brasil" type="button">
+<span class="option-head">
+<span class="option-symbol option-symbol-photo">
+<img alt="Nódulos de bactérias fixadoras de nitrogênio nas raízes de soja" loading="lazy" src="img/fotos/raizes.jpg"/>
+</span>
+<span class="option-index">05</span>
+</span>
+<span class="option-text">
+<strong>Brasil</strong>
+<small>Ciência produzida aqui.</small>
+</span>
+<span aria-hidden="true" class="option-arrow">↗</span>
+</button>
+<button aria-pressed="false" class="explore-option topic-descobertas" data-alt="Modelo físico da dupla hélice de DNA em museu" data-count="4 histórias" data-image="img/fotos/dna.jpg" data-link="descobertas.html" data-text="Novas pistas sobre o DNA, a matéria e a história da vida." data-title="Descobertas" type="button">
+<span class="option-head">
+<span class="option-symbol option-symbol-photo">
+<img alt="Modelo físico da dupla hélice de DNA em museu" loading="lazy" src="img/fotos/dna.jpg"/>
+</span>
+<span class="option-index">06</span>
+</span>
+<span class="option-text">
+<strong>Descobertas</strong>
+<small>Novas formas de enxergar.</small>
+</span>
+<span aria-hidden="true" class="option-arrow">↗</span>
+</button>
+</div>
+<p class="choice-tip">Selecione um tema e conheça a história em destaque.</p>
+</section>
+<section aria-label="Prévia do tema escolhido" aria-live="polite" class="explore-feature" id="exploreFeature">
+<div class="feature-photo">
+<img alt="Café sendo passado com filtro de papel" id="coreImage" src="img/fotos/cafe.jpg"/>
+<span class="photo-shade"> </span>
+</div>
+<div class="feature-top">
+<span class="feature-mark">E / C</span>
+<span class="feature-tag">IDEIAS QUE TRANSFORMARAM O MUNDO</span>
+</div>
+<div class="feature-content">
+<p class="feature-counter" id="coreCount">8 histórias</p>
+<h2 id="coreTitle">Cotidiano</h2>
+<p id="coreText">Uma rotina completa, do café da manhã à noite. Descubra invenções presentes no seu dia.</p>
+<a class="feature-action" href="cotidiano.html" id="coreLink">
        Conhecer esse caminho
        <span aria-hidden="true">↗</span>
-      </a>
-     </div>
-    </section>
-   </div>
-   <div class="explore-bottom">
-    <span class="bottom-line"> </span>
-    <p>Uma descoberta pode mudar uma rotina. Uma pesquisa pode mudar o mundo.</p>
-    <span class="bottom-line"> </span>
-   </div>
-  </main>
-  <footer class="site-footer">
-   <span>Elas na Ciência</span>
-   <span>MTEC</span>
-   <a class="credit-link" href="creditos.html">Créditos das imagens</a>
-  </footer>
- </body>
+</a>
+</div>
+</section>
+</div>
+<div class="explore-bottom">
+<span class="bottom-line"> </span>
+<p>Uma descoberta pode mudar uma rotina. Uma pesquisa pode mudar o mundo.</p>
+<span class="bottom-line"> </span>
+</div>
+</main>
+<footer class="site-footer">
+<span>Elas na Ciência</span>
+<span>MTEC</span>
+<a class="credit-link" href="creditos.html">Créditos das imagens</a>
+</footer>
+</body>
 </html>

@@ -1194,3 +1194,6 @@ button {
 .explore-option:hover .option-symbol-photo img,.explore-option.is-active .option-symbol-photo img {
   filter: saturate(1.02) contrast(1.08);
 }
+
+/* Cotidiano: retrato substituido por iniciais quando nao ha fotografia local */
+.person-initials { width:59px; height:59px; flex-shrink:0; display:flex; align-items:center; justify-content:center; border-radius:50%; border:2px solid rgba(147,199,255,.38); background:#263347; color:#d5eaff; font-weight:800; font-size:16px; }
